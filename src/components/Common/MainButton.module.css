@@ -1,0 +1,19 @@
+.main {
+    color: white;
+    background: darkgrey;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.main:hover {
+    background: grey;
+}
+
+@media (min-width: 1900px) {
+    .main {
+        padding: 12px 40px;
+        font-size: 29px;
+        line-height: 44px;
+    }
+}
