@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import classes from './MainPage.module.css';
+import classes from '../MainPage.module.css';
 import Tile from './Tile';
 import LoadingTiles from './LoadingTiles';
 

@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { fetchReceivers } from '../../services/ReceiversProvider';
+import { fetchReceivers } from '../../../services/ReceiversProvider';
 import Tiles from './Tiles';
-import useInfiniteScroll from '../../hooks/useInfiniteScroll';
+import useInfiniteScroll from '../../../hooks/useInfiniteScroll';
 
 const InfiniteTiles = ({startingPage = 1, instantInit = false}) => {
     const {

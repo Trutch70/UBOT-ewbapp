@@ -1,8 +1,7 @@
 @media (min-width: 1900px) {
     .main-page-upper {
-        width: 60%;
+        width: 65%;
         margin-bottom: 40px;
-        padding-top: 155px;
     }
 
     .main-header {
@@ -45,7 +44,12 @@
     }
 
     .bottom-section {
+        padding-top: 70px;
         padding-bottom: 85px;
+    }
+
+    .slider-container {
+        margin-top: 24px;
     }
 }
 
@@ -61,4 +65,26 @@
 
 .middle-section {
     background: #F4F4F4;
+}
+
+.insta a {
+    color: #903bc9;
+    font-size: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.insta a:hover {
+    color: #ac25e3;
+}
+
+.insta .link {
+    margin-left: 20px;
+}
+
+.insta img {
+    height: 40px;
+    width: 40px;
 }

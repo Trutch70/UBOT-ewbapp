@@ -1,24 +1,44 @@
 body {
-  margin: 0;
-  font-family: 'Maven Pro', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: 'Maven Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content {
+    flex: 1;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 .text-blue {
-  color: #4378FF;
+    color: #4378FF !important;
 }
 
 .text-yellow {
-  color: #FFB800;
+    color: #FFB800 !important;
+}
+
+.slick-list {
+    margin: 0 -1rem;
+    cursor: grabbing;
+}
+
+.slick-slide > div {
+    padding: 0 1rem;
 }
 
 @media (min-width: 1900px) {
-  .content-container {
-    padding: 0 85px 0;
-  }
+    .page-content {
+        padding-top: 155px;
+    }
 }
