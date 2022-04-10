@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-const useInfiniteScroll = (apiCallFunction, pageSize, initialPage, instantInit = false) => {
+const useInfiniteScroll = (apiCallFunction, pageSize, initialPage, offset = 0, instantInit = false) => {
     const scrollElementRef = useRef();
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -8,7 +8,10 @@ const useInfiniteScroll = (apiCallFunction, pageSize, initialPage, instantInit =
     const [reachedLimit, setReachedLimit] = useState(false);
 
     const scrollListener = useCallback(() => {
-        if (window.scrollY >= (scrollElementRef.current.offsetTop + scrollElementRef.current.offsetHeight - window.innerHeight) && !loading) {
+        if (!scrollElementRef.current || loading) {
+            return;
+        }
+        if (window.scrollY >= (scrollElementRef.current.offsetTop + scrollElementRef.current.offsetHeight - window.innerHeight - offset)) {
             setLoading(true);
             apiCallFunction(currentPage, pageSize)
                 .then(data => {
@@ -24,7 +27,7 @@ const useInfiniteScroll = (apiCallFunction, pageSize, initialPage, instantInit =
                 })
             ;
         }
-    }, [loading, currentPage]);
+    }, [loading, currentPage, scrollElementRef.current]);
 
     useEffect(() => {
         if (instantInit) {

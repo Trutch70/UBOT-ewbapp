@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './MainPage.module.css';
 import MainButton from '../Common/MainButton';
 import ContentContainer from '../Common/ContentContainer';
+import { Link } from 'react-router-dom';
 
 const MainPageUpper = () => {
     return (
@@ -18,7 +19,9 @@ const MainPageUpper = () => {
                     triumphs, they will help Ukrainians regain peace, stability and a sense of security.
                 </p>
                 <div className={classes['main-button-container']}>
-                    <MainButton type={"button"} text={"Find out more"}/>
+                    <Link to={"/about-us"}>
+                        <MainButton type={"button"} text={"Find out more"}/>
+                    </Link>
                 </div>
             </ContentContainer>
         </section>

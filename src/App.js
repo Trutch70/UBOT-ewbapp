@@ -1,13 +1,12 @@
 import Header from './components/Layout/Header';
-import MainPage from './components/MainPage/MainPage';
 import './index.css';
-import Footer from './components/Layout/Footer';
+import Footer from './components/Layout/Footer/Footer';
 
-function App() {
+const App = (props) => {
     return (
         <>
             <Header/>
-            <MainPage/>
+            {props.children}
             <Footer/>
         </>
     );

@@ -4,10 +4,7 @@ import ContentContainer from '../Common/ContentContainer';
 import instagramIcon from '../../assets/Instagram_Glyph_Gradient_RGB.png';
 import Slider from "react-slick";
 import Tile from './Tiles/Tile';
-import awesome1 from '../../assets/awesome/awesome1.jpeg';
-import awesome2 from '../../assets/awesome/awesome2.jpeg';
-import awesome3 from '../../assets/awesome/awesome3.jpeg';
-import awesome4 from '../../assets/awesome/awesome4.jpeg';
+import getAwesomeImages from '../../services/GetAwesomeImages';
 
 const MainPageMiddle = () => {
     const settings = {
@@ -15,11 +12,10 @@ const MainPageMiddle = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 4,
-        // autoplay: true,
-        // autoplaySpeed: 4000,
+        slidesToScroll: 2,
+        autoplay: true,
+        autoplaySpeed: 4000,
         pauseOnHover: true,
-        arrows: false,
         adaptiveHeight: true,
     };
 
@@ -44,18 +40,13 @@ const MainPageMiddle = () => {
                 </div>
                 <div className={classes['slider-container']}>
                     <Slider {...settings}>
-                        <div className={classes['carousel-item']}>
-                            <Tile background={awesome4} displayButton={false}/>
-                        </div>
-                        <div className={classes['carousel-item']}>
-                            <Tile background={awesome3} displayButton={false}/>
-                        </div>
-                        <div className={classes['carousel-item']}>
-                            <Tile background={awesome2} displayButton={false}/>
-                        </div>
-                        <div className={classes['carousel-item']}>
-                            <Tile background={awesome1} displayButton={false}/>
-                        </div>
+                        {getAwesomeImages().map((image, index) => {
+                            return (
+                                <div key={`awesome_${index}`} className={classes['carousel-item']}>
+                                    <Tile background={image} displayButton={false}/>
+                                </div>
+                            );
+                        })}
                     </Slider>
                 </div>
             </ContentContainer>
