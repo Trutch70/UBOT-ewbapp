@@ -33,7 +33,7 @@ const MainPageMiddle = () => {
                     </p>
                 </div>
                 <div className={classes.insta}>
-                    <a target={"_blank"} href={"#"}>
+                    <a target={"_blank"} rel={"noreferrer"} href={"https://www.instagram.com/jualiasun/"}>
                         <img src={instagramIcon} alt={"instagram icon"}/>
                         <strong className={classes.link}>@juliasun</strong>
                     </a>

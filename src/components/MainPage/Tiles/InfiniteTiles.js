@@ -1,16 +1,17 @@
 import React from 'react';
-import { fetchReceivers } from '../../../services/ReceiversProvider';
+import useReceiversProvider from '../../../hooks/UseReceiversProvider';
 import Tiles from './Tiles';
 import useInfiniteScroll from '../../../hooks/useInfiniteScroll';
 
 const InfiniteTiles = ({startingPage = 1, instantInit = false}) => {
+    const receiversProvider = useReceiversProvider();
     const offset = Math.round(window.innerHeight / 2);
 
     const {
         scrollElementRef: tilesRef,
         data: receivers,
         loading
-    } = useInfiniteScroll(fetchReceivers, 8, startingPage, offset, instantInit);
+    } = useInfiniteScroll(receiversProvider.fetchReceivers, 8, startingPage, offset, instantInit);
 
     return <Tiles ref={tilesRef} receivers={receivers} loading={loading} loadingTilesAmount={4}/>;
 };

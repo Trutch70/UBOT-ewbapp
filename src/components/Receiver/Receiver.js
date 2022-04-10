@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { fetchReceiver } from '../../services/ReceiversProvider';
+import useReceiversProvider  from '../../hooks/UseReceiversProvider';
 import ContentContainer from '../Common/ContentContainer';
 import classes from './Receiver.module.css';
 import defaultImage from '../../assets/default-image.png';
@@ -10,6 +10,7 @@ const Receiver = () => {
     const [receiver, setReceiver] = useState({});
     const [error, setError] = useState(null);
     const { receiverId } = useParams();
+    const receiversProvider = useReceiversProvider();
 
     let image = defaultImage;
     if (receiver && receiver.image_path) {
@@ -17,7 +18,7 @@ const Receiver = () => {
     }
 
     useEffect(() => {
-        fetchReceiver(receiverId)
+        receiversProvider.fetchReceiver(receiverId)
             .then(data => setReceiver(data))
             .catch(error => {
                 switch(error.message) {
@@ -29,7 +30,7 @@ const Receiver = () => {
                         break;
                 }
             })
-    }, [receiverId])
+    }, [receiverId, receiversProvider])
 
     return (
         <div className={"page-content"}>
@@ -38,12 +39,12 @@ const Receiver = () => {
                 <ContentContainer>
                     <div className={classes.container}>
                         <div className={classes['image-container']}>
-                            <img src={image} />
+                            <img src={image} alt={"business"} />
                         </div>
                         <div className={classes['info-container']}>
                             <div className={classes['city-container']}>
-                                <img src={process.env.PUBLIC_URL + '/logo512.png'} className={classes.icon}/>
-                                <img src={locationIcon} className={`${classes.icon} ${classes.location}`}/>
+                                <img src={process.env.PUBLIC_URL + '/logo512.png'} className={classes.icon} alt={"placeholder"}/>
+                                <img src={locationIcon} className={`${classes.icon} ${classes.location}`} alt={"location icon"}/>
                                 <div className={classes.city}>{receiver.location ? receiver.location.name : "Exact Location not given"}</div>
                             </div>
                             <div className={classes.header}>
@@ -52,7 +53,7 @@ const Receiver = () => {
                             <div className={classes.description}>
                                 {receiver.description}
                             </div>
-                            <div className={classes.iban}>
+                            <div>
                                 <strong>IBAN: </strong>{receiver.bank_account}
                             </div>
                         </div>

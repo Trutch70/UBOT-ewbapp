@@ -1,4 +1,3 @@
-import React from 'react';
 import awesome1 from '../assets/awesome/awesome1.jpeg';
 import awesome2 from '../assets/awesome/awesome2.jpeg';
 import awesome3 from '../assets/awesome/awesome3.jpeg';

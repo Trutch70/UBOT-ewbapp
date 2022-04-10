@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import classes from './MainPage.module.css';
 import Tiles from './Tiles/Tiles';
-import { fetchReceivers } from '../../services/ReceiversProvider';
+import useReceiversProvider from '../../hooks/UseReceiversProvider';
 import ContentContainer from '../Common/ContentContainer';
 
 const MainPageMain = () => {
     const [receivers, setReceivers] = useState([]);
     const [loading, setLoading] = useState(true);
+    const receiversProvider = useReceiversProvider();
 
     useEffect(() => {
-        fetchReceivers()
+        receiversProvider.fetchReceivers()
             .then(data => {
                 setReceivers(data);
                 setLoading(false);
             })
-    }, []);
+    }, [receiversProvider]);
     return (
         <section className={`${classes['main-section']}`}>
             <ContentContainer>

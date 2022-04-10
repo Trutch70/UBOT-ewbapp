@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 const useInfiniteScroll = (apiCallFunction, pageSize, initialPage, offset = 0, instantInit = false) => {
     const scrollElementRef = useRef();
@@ -27,7 +27,7 @@ const useInfiniteScroll = (apiCallFunction, pageSize, initialPage, offset = 0, i
                 })
             ;
         }
-    }, [loading, currentPage, scrollElementRef.current]);
+    }, [loading, currentPage, apiCallFunction, offset, pageSize]);
 
     useEffect(() => {
         if (instantInit) {
@@ -44,7 +44,7 @@ const useInfiniteScroll = (apiCallFunction, pageSize, initialPage, offset = 0, i
                 })
             ;
         }
-    }, []);
+    }, [apiCallFunction, initialPage, instantInit, pageSize]);
 
     useEffect(() => {
         if (!reachedLimit) {
@@ -56,11 +56,13 @@ const useInfiniteScroll = (apiCallFunction, pageSize, initialPage, offset = 0, i
         }
     }, [scrollListener, reachedLimit]);
 
-    return {
-        scrollElementRef,
-        data,
-        loading,
-    };
+    return useMemo(() => {
+        return {
+            scrollElementRef,
+            data,
+            loading,
+        }
+    }, [data, loading]);
 };
 
 export default useInfiniteScroll;
