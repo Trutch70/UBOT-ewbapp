@@ -1,0 +1,130 @@
+.navbar {
+    color: #4378FF;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+    width: 100%;
+    background: white;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    height: 60px;
+}
+
+.navigation-container {
+    display: flex;
+}
+
+.mobile-nav-toggle {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    z-index: 999;
+}
+
+.mobile-nav-toggle img {
+    transition: transform 0.3s;
+}
+
+.navigation-container.open img {
+    transform: rotate(90deg);
+}
+
+.navigation {
+    width: 0;
+    height: calc(100vh - 60px);
+    position: fixed;
+    left: 0;
+    top: 60px;
+    transition: width 0.3s;
+    z-index: 998;
+    white-space: nowrap;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+
+.navigation > ul {
+    height: 100%;
+}
+
+.navigation > ul >li {
+    padding: 10px 20px;
+}
+
+.navigation-container.open .navigation {
+    width: 50vw;
+}
+
+.logo {
+    display: inline-block;
+    margin-left: auto;
+    background: grey;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar .container {
+    position: relative;
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar .active {
+    font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+    .navbar {
+        height: auto;
+    }
+
+    .mobile-nav-toggle {
+        display: none;;
+    }
+
+    .navigation {
+        display: block;
+        position: relative;
+        width: auto;
+        background: none;
+        height: auto;
+        padding: 0;
+        top: auto;
+        white-space: normal;
+        left: auto;
+    }
+    .navbar .container {
+        padding: 30px 40px 0;
+    }
+
+    .navbar ul > li {
+        display: inline-block;
+        margin-right: 20px;
+        font-size: 20px;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .navbar .container {
+        padding: 55px 90px 0;
+    }
+
+    .navbar ul > li {
+        display: inline-block;
+        margin-right: 42px;
+        font-size: 26px;
+        line-height: 30px;
+    }
+}

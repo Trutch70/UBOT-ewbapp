@@ -20,7 +20,7 @@ const MainPageMain = () => {
         <section className={`${classes['main-section']}`}>
             <ContentContainer>
                 <div className={`${classes['sub-header']} text-yellow`}>
-                    Meet those who continue to operate in Ukraine:
+                    Despite the war, they still operate in Ukraine:
                 </div>
                 <Tiles receivers={receivers} loading={loading} loadingTilesAmount={4} />
             </ContentContainer>

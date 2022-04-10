@@ -33,6 +33,7 @@
     .image-container img {
         width: 820px;
         height: 620px;
+        object-fit: cover;
     }
 
     .icon {

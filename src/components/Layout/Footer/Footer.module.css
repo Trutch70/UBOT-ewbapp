@@ -4,6 +4,11 @@
     width: 100%;
 }
 
+.footer img{
+    width: 40px;
+    height: 40px;
+}
+
 @media (min-width: 1900px) {
     .footer-container {
         padding: 55px 40px;
