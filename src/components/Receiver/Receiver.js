@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { fetchReceiver } from '../../services/ReceiversProvider';
 import ContentContainer from '../Common/ContentContainer';
 import classes from './Receiver.module.css';
-import defaultImage from '../../assets/factory.jpg';
+import defaultImage from '../../assets/default-image.png';
 import locationIcon from '../../assets/iconmonstr-location-1.svg';
 
 const Receiver = () => {
