@@ -5,8 +5,7 @@ const MainButton = ({
     text,
     type,
     onClick,
-}) =>
-{
+}) => {
     return (
         <button type={type} className={classes.main} onClick={onClick}>
             {text}

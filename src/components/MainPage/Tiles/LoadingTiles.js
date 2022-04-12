@@ -1,11 +1,11 @@
 import React from 'react';
-import Tile from './Tile';
+import ReceiverTile from './ReceiverTile';
 
 const LoadingTiles = ({amount}) => {
     const tiles = [];
 
     for (let i = 0; i < amount; i ++) {
-        tiles.push(<Tile key={`loading_tile_${i}`} loading={true}/>)
+        tiles.push(<ReceiverTile key={`loading_tile_${i}`} loading={true}/>)
     }
 
     return tiles;

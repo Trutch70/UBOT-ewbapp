@@ -1,9 +1,24 @@
 /* z-indexes: */
 /* 1000+ modals */
 /* 999-997 nav */
+
+@font-face {
+    font-family: Avenir;
+    src: url("../src/assets/fonts/AvenirLTStd-Roman.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url("../src/assets/fonts/AvenirLTStd-Black.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
     margin: 0;
-    font-family: 'Maven Pro', sans-serif;
+    font-family: Avenir, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -60,7 +75,6 @@ code {
     {
         font-size: 60px;
         line-height: 1;
-
-        color: black;
+        -webkit-text-stroke: thin rgba(67, 120, 255, 0.3);
     }
 }

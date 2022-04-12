@@ -1,5 +1,5 @@
 .footer {
-    background: darkgrey;
+    background: linear-gradient(90deg, rgba(67, 120, 255, 0.32) -0.86%, rgba(255, 184, 0, 0.32) 101.33%);
     align-self: flex-end;
     width: 100%;
 }
@@ -11,8 +11,8 @@
 
 @media (min-width: 1900px) {
     .footer-container {
-        padding: 55px 40px;
-        width: calc(100% - 80px);
+        padding: 55px 90px;
+        width: calc(100% - 180px);
         display: grid;
         grid-template-columns: minmax(0, 1.9fr) minmax(0, 1.9fr) minmax(0, 285px);
         grid-gap: 100px;

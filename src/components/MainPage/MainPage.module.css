@@ -1,21 +1,26 @@
 @media (min-width: 1900px) {
     .main-page-upper {
-        width: 65%;
-        margin-bottom: 40px;
+        width: 80%;
+        margin-bottom: 90px;
     }
 
     .main-header {
         padding: 10px 0 20px;
-        font-size: 100px;
+        font-size: 90px;
         font-weight: 700;
         line-height: 100px;
         text-align: left;
     }
 
+    .main-page-upper p {
+        padding-right: 120px;
+    }
+
     .main-page-upper p,
     .middle-section p{
+        font-size: 25px;
         font-weight: 400;
-        line-height: 31px;
+        line-height: 40px;
         text-align: left;
     }
 
@@ -24,22 +29,32 @@
     }
 
     .sub-header {
-        font-size: 52px;
-        line-height: 52px;
-        margin-bottom: 40px;
+        font-size: 47px;
+        line-height: 65px;
+        margin-bottom: 32px;
     }
 
     .main-section {
-        padding-bottom:  140px;
+        padding-bottom: 95px;
     }
 
     .middle-section {
-        padding-top: 35px;
-        padding-bottom: 35px;
+        padding-top: 49px;
+        padding-bottom: 23px;
+        text-align: center;
     }
 
     .middle-section .paragraph-container {
-        width: 46%;
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 49px;
+    }
+
+    .middle-section .paragraph-container p {
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
     }
 
     .bottom-section {
@@ -49,6 +64,10 @@
 
     .slider-container {
         margin-top: 24px;
+    }
+
+    .insta {
+        margin-top: 23px;
     }
 }
 
@@ -66,9 +85,15 @@
     background: #F4F4F4;
 }
 
+.insta {
+    display: flex;
+    justify-content: center;
+}
+
 .insta a {
-    color: #903bc9;
-    font-size: 30px;
+    color: #818181;
+    font-size: 19px;
+    line-height: 57px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -76,14 +101,17 @@
 }
 
 .insta a:hover {
-    color: #ac25e3;
+    color: #7f708d;
 }
 
 .insta .link {
-    margin-left: 20px;
+    font-family: Maven Pro, sans-serif;
+    margin-left: 14px;
 }
 
 .insta img {
-    height: 40px;
-    width: 40px;
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    background: linear-gradient(49.12deg, #FFDD55 6.62%, #FF543E 50.06%, #C837AB 93.5%);;
 }

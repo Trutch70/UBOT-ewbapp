@@ -26,7 +26,7 @@ const Header = () => {
                             </li>
                             <li>
                                 <NavLink to={"/about-us"} className={({isActive}) => `${isActive ? classes.active : ''} text-blue`}>
-                                    About us
+                                    About the project
                                 </NavLink>
                             </li>
                             <li>

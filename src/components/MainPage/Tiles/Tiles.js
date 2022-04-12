@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import classes from '../MainPage.module.css';
-import Tile from './Tile';
+import ReceiverTile from './ReceiverTile';
 import LoadingTiles from './LoadingTiles';
 
 const Tiles = forwardRef(({
@@ -12,12 +12,13 @@ const Tiles = forwardRef(({
         <div ref={ref} className={classes.tiles}>
             {
                 receivers.map((receiver) => {
-                    return <Tile bgMode={receiver.image_path ? 'dark' : null}
-                                 background={receiver.image_path}
-                                 buttonHref={`/businesses/${receiver.id}`}
-                                 key={receiver.id}
-                                 title={receiver.name}
-                                 description={receiver.description}
+                    return <ReceiverTile bgMode={receiver.image_path ? 'dark' : null}
+                                         background={receiver.image_path}
+                                         buttonHref={`/businesses/${receiver.id}`}
+                                         key={receiver.id}
+                                         title={receiver.name}
+                                         description={receiver.description}
+                                         receiver={true}
                     />
                 })
             }

@@ -1,9 +1,11 @@
 .main {
-    color: white;
-    background: darkgrey;
-    font-weight: 700;
+    background: #FFFFFF;
+    box-shadow: 0 0 9px 1px rgba(67, 120, 255, 0.21);
+    border-radius: 513px;
+    color: #4378FF;
     border: none;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .main:hover {
@@ -12,8 +14,8 @@
 
 @media (min-width: 1900px) {
     .main {
-        padding: 12px 40px;
-        font-size: 29px;
-        line-height: 44px;
+        padding: 8px 31px;
+        font-size: 25px;
+        line-height: 46px;
     }
 }

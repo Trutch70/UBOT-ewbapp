@@ -1,0 +1,25 @@
+.wrapper {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1900px) {
+    .wrapper {
+        padding: 30px;
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .wrapper .image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .wrapper .image img{
+        width: 60px;
+        height: 60px;
+    }
+}

@@ -1,28 +1,14 @@
 import React from 'react';
 import classes from './MainPage.module.css';
 import ContentContainer from '../Common/ContentContainer';
-import instagramIcon from '../../assets/Instagram_Glyph_Gradient_RGB.png';
-import Slider from "react-slick";
-import Tile from './Tiles/Tile';
-import getAwesomeImages from '../../services/GetAwesomeImages';
+import instagramIcon from '../../assets/Instagram_logo_2016.svg';
+import AwesomeImagesSlider from './AwesomeImages/AwesomeImagesSlider';
 
 const MainPageMiddle = () => {
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 2,
-        autoplay: true,
-        autoplaySpeed: 4000,
-        pauseOnHover: true,
-        adaptiveHeight: true,
-    };
-
     return (
         <section className={`${classes['middle-section']}`}>
             <ContentContainer>
-                <div className={`${classes['sub-header']} text-yellow`}>
+                <div className={`${classes['sub-header']} text-blue`}>
                     Russian warship, go f*ck yourself
                 </div>
                 <div className={classes['paragraph-container']}>
@@ -32,22 +18,14 @@ const MainPageMiddle = () => {
                         track a little faster, as soon as Ukraine repels the unjustified agression by Russia. <strong>#standwithukraine</strong>
                     </p>
                 </div>
+                <div className={classes['slider-container']}>
+                    <AwesomeImagesSlider />
+                </div>
                 <div className={classes.insta}>
                     <a target={"_blank"} rel={"noreferrer"} href={"https://www.instagram.com/jualiasun/"}>
                         <img src={instagramIcon} alt={"instagram icon"}/>
-                        <strong className={classes.link}>@juliasun</strong>
+                        <strong className={classes.link}>@jualiasun</strong>
                     </a>
-                </div>
-                <div className={classes['slider-container']}>
-                    <Slider {...settings}>
-                        {getAwesomeImages().map((image, index) => {
-                            return (
-                                <div key={`awesome_${index}`} className={classes['carousel-item']}>
-                                    <Tile background={image} displayButton={false}/>
-                                </div>
-                            );
-                        })}
-                    </Slider>
                 </div>
             </ContentContainer>
         </section>

@@ -1,12 +1,18 @@
 .tile {
-    background: #d0d0d0;
+    background: #ffffff;
     position: relative;
+    box-shadow: 0 4px 19px 1px rgba(67, 120, 255, 0.2);
+    display: flex;
+    align-items: stretch;
+    border-radius: 34px;
 }
 
-.tile::before {
-    content: '';
-    padding-top: 100%;
-    display: block;
+.tile.dark {
+    color: #ffffff;
+}
+
+.tile .content {
+    display: flex;
 }
 
 .tile .wrapper {
@@ -18,37 +24,38 @@
 }
 
 .paragraph-container {
-    max-height: 50%;
-    text-overflow: ellipsis;
+    flex-grow: 1;
 }
 
 @media (min-width: 1900px) {
     .tile .content {
-        padding: 50px 28px;
+        padding: 27px 28px 40px;
+        display: flex;
+        flex-direction: column;
     }
 
     .tile .header {
-        font-size: 42px;
-        line-height: 50px;
+        font-size: 26px;
+        line-height: 35px;
         font-weight: 700;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 1;
     }
 
-    .tile .paragraph-container {
+    .tile .paragraph-container p{
         line-height: 30px;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        -webkit-line-clamp: 4;
+        -webkit-line-clamp: 5;
     }
 
-    .tile .button-container {
-        position: absolute;
-        bottom: 50px;
-        left: 28px;
+    .tile button {
+        font-size: 20px !important;
+        line-height: 38px !important;
+        padding: 5px 30px !important;
     }
 }
 
