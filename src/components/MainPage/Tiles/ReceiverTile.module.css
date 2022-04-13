@@ -45,6 +45,7 @@
     }
 
     .tile .paragraph-container p{
+        min-height: 150px;
         line-height: 30px;
         display: -webkit-box;
         -webkit-box-orient: vertical;

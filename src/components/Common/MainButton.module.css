@@ -9,7 +9,8 @@
 }
 
 .main:hover {
-    background: grey;
+    background: rgba(67, 120, 255, 0.35);
+    color: #ffffff;
 }
 
 @media (min-width: 1900px) {
