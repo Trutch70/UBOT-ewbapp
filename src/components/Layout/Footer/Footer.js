@@ -20,19 +20,19 @@ const Footer = () => {
         </span>
     );
 
-    const mailClickHandler = () => {
-        window.location.href = 'mailto:hello@ukraine-back-on-track.com';
-    }
-
-    const shareClickHandler = () => {
-        window.open('https://www.facebook.com/sharer/sharer.php?u=ukraine-back-on-track.com');
-    }
-
     return (
         <footer className={classes.footer}>
             <div className={classes['footer-container']}>
-                <FooterInfo content={content1} image={loveLetterIcon} imageAlt={"love letter"} onImageClick={mailClickHandler}/>
-                <FooterInfo content={content2} image={foldedHandsIcon} imageAlt={"folded hands"} onImageClick={shareClickHandler} />
+                <FooterInfo content={content1}
+                            image={loveLetterIcon}
+                            imageAlt={"love letter"}
+                            imageHref={"mailto:hello@ukraine-back-on-track.com"}
+                />
+                <FooterInfo content={content2}
+                            image={foldedHandsIcon}
+                            imageAlt={"folded hands"}
+                            imageHref={"https://www.facebook.com/sharer/sharer.php?u=ukraine-back-on-track.com"}
+                />
                 <FooterIcons />
             </div>
         </footer>

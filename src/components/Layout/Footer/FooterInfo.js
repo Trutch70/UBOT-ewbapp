@@ -2,12 +2,12 @@ import React from 'react';
 import classes from './Footer.module.css';
 import FooterImage from './FooterImage';
 
-const FooterInfo = ({image, imageAlt, onImageClick, content}) => {
+const FooterInfo = ({image, imageAlt, imageHref, content}) => {
 
     return (
         <div className={classes['footer-info']}>
             <div className={classes.image}>
-                <FooterImage onClick={onImageClick}>
+                <FooterImage href={imageHref}>
                     <img src={image} alt={imageAlt}/>
                 </FooterImage>
             </div>
