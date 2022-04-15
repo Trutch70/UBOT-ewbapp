@@ -34,10 +34,7 @@ const AboutUsProfiles = () => {
                     A matter of trust
                 </div>
                 <div className={`${classes.paragraph} ${classes['paragraph-indent-right']}`}>
-                    2 of us were born and raised in Ukraine. Together with our friends from Poland we have created this website using knowledge in IT and marketing. Thanks to <strong>Ukraine: Back on Track</strong>, we can help the Ukrainians now and after the end of the Russian invasion.
-                    <br/>
-                    <br/>
-                    The idea was born when Russia attacked Ukraine. We were terrified. Many of our relatives and friend lost their jobs and sense of stability within a few days. It was their stories that inspired us to help Ukrainian businesses survive this difficult time.
+                    We are well aware that the Internet is full of scammers who use disgusting lies and manipulation. That is why we care about full transparency in building trust. You can find us on social media and the entire code of the website is open. We also do not collect your data. We are just looking for Ukrainian businesses that need help and share their data with you. You can check their truthfulness yourself and decide who you want to help.
                 </div>
             </div>
         </AboutUsSection>
