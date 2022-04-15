@@ -37,7 +37,7 @@ const Header = () => {
                         </ul>
                     </div>
                 </div>
-                <div className={classes.logo} style={{height: '57px', width: '204px'}}>
+                <div className={classes.logo}>
 
                 </div>
             </div>

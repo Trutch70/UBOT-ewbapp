@@ -12,6 +12,14 @@
     box-shadow: 0 0 0.1em rgba(255, 255, 255, 0.7);
 }
 
+@media (min-width: 1400px) {
+    .secondary {
+        font-size: 16px;
+        line-height: 29px;
+        padding: 4px 24px;
+    }
+}
+
 @media (min-width: 1900px) {
     .secondary {
         font-size: 20px;

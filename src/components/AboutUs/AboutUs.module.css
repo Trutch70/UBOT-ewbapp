@@ -1,0 +1,70 @@
+.bg-grey {
+    background: #F4F4F4;
+}
+
+.header {
+    font-weight: 700;
+}
+
+@media (min-width: 1900px) {
+    .about-us-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .about-us-section .left{
+        padding-right: 50px;
+    }
+
+    .about-us-section .right{
+        padding-left: 50px;
+    }
+
+    .upper-container {
+        display: grid;
+        grid-template-columns: 1.7fr 1fr;
+    }
+
+    .header {
+        font-size: 85px;
+        line-height: 109px;
+    }
+
+    .paragraph {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .about-us-section .paragraph {
+        margin-top: 40px;
+    }
+
+    .about-us-section .paragraph-indent-right {
+        padding-right: 40px;
+    }
+
+    .upper-container .paragraph {
+        margin-top: 70px;
+    }
+
+    .profiles {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 24px;
+        margin-right: 80px;
+    }
+
+    .get-involved {
+        text-align: center;
+        padding-top: 160px;
+        padding-bottom: 130px;
+    }
+
+    .get-involved .header {
+        margin-bottom: 35px;
+    }
+
+    .get-involved .paragraph {
+        margin: 0 170px;
+    }
+}

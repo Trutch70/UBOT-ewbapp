@@ -113,16 +113,27 @@
         margin-right: 20px;
         font-size: 20px;
         line-height: 22px;
+        padding: 0;
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1400px) {
     .navbar .container {
-        padding: 55px 90px 0;
+        padding: 55px 44px 30px;
     }
 
     .navbar ul > li {
-        display: inline-block;
+        margin-right: 40px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 1900px) {
+    .navbar .container {
+        padding: 55px 90px 40px;
+    }
+
+    .navbar ul > li {
         margin-right: 42px;
         font-size: 26px;
         line-height: 30px;

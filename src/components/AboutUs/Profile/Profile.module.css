@@ -1,0 +1,41 @@
+@media (min-width: 1900px) {
+    .profile {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .profile img {
+        height: 112px;
+        width: 112px;
+    }
+
+    .profile .name {
+        font-size: 50px;
+        line-height: 100px;
+        font-weight: 700;
+        margin-left: 25px;
+    }
+
+    .profile .social {
+        margin-left: auto;
+    }
+
+    .profile .social img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .profile .social .facebook {
+        margin-left: 9px;
+    }
+
+    .profile .social a img {
+        border-radius: 15px;
+        background: #ffffff;
+    }
+
+    .profile a:hover img {
+        box-shadow: 0 0 0.2em gray;
+    }
+}

@@ -12,11 +12,27 @@
     box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.2);
 }
 
+@media (min-width: 1400px) {
+    .wrapper {
+        padding: 25px;
+        border-radius: 26px;
+    }
+
+    .wrapper .image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .wrapper .image  img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
 @media (min-width: 1900px) {
     .wrapper {
         padding: 30px;
-        font-size: 50px;
-        line-height: 60px;
+        border-radius: 34px;
     }
 
     .wrapper .image {

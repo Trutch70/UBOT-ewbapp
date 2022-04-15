@@ -21,9 +21,10 @@ body {
     font-family: Avenir, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: #404040;
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1400px) {
     body {
         font-size: 20px;
     }
@@ -60,6 +61,25 @@ code {
     padding: 0 1rem;
 }
 
+@media (min-width: 1400px) {
+    .page-content {
+        padding-top: 135px;
+    }
+
+    .slick-prev {
+        left: -45px;
+        z-index: 10;
+    }
+
+    .slick-prev:before,
+    .slick-next:before
+    {
+        font-size: 40px;
+        line-height: 1;
+        -webkit-text-stroke: thin rgba(67, 120, 255, 0.3);
+    }
+}
+
 @media (min-width: 1900px) {
     .page-content {
         padding-top: 155px;
@@ -67,14 +87,11 @@ code {
 
     .slick-prev {
         left: -65px;
-        z-index: 10;
     }
 
     .slick-prev:before,
     .slick-next:before
     {
         font-size: 60px;
-        line-height: 1;
-        -webkit-text-stroke: thin rgba(67, 120, 255, 0.3);
     }
 }
