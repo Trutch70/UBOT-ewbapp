@@ -1,8 +1,15 @@
 import { useCallback, useMemo } from 'react';
 
 const useReceiversProvider = () => {
-    const fetchReceivers = useCallback(async (page = 1, limit = 8) => {
-        return fetch(process.env.REACT_APP_API_HOST + '/api/receivers?page=' + page + '&limit=' + limit)
+    const fetchReceivers = useCallback(async (page = 1, limit = 8, filters = null) => {
+        let url = process.env.REACT_APP_API_HOST + '/api/receivers?page=' + page + '&limit=' + limit;
+        if (filters) {
+            for (const [key, value] of Object.entries(filters)) {
+                url += `&${key}=${value}`;
+            }
+        }
+
+        return fetch(url)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Something went wrong.');

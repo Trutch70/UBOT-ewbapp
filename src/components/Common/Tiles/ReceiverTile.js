@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './ReceiverTile.module.css';
-import MainButton from '../../Common/MainButton';
+import MainButton from '../MainButton';
 import { Link } from 'react-router-dom';
-import SecondaryButton from '../../Common/SecondaryButton';
+import SecondaryButton from '../SecondaryButton';
 
 const ReceiverTile = ({
     title,

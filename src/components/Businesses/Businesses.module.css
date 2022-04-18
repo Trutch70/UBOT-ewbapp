@@ -1,0 +1,19 @@
+.header {
+    font-weight: 700;
+}
+
+@media (min-width: 1900px) {
+    .businesses {
+        padding-bottom: 100px;
+    }
+
+    .header {
+        font-size: 85px;
+        line-height: 109px;
+    }
+
+    .filters {
+        font-size: 20px;
+        margin: 40px 10px;
+    }
+}

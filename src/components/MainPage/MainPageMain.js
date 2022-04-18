@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import classes from './MainPage.module.css';
-import Tiles from './Tiles/Tiles';
+import Tiles from '../Common/Tiles/Tiles';
 import useReceiversProvider from '../../hooks/UseReceiversProvider';
 import ContentContainer from '../Common/ContentContainer';
 

@@ -1,0 +1,23 @@
+select.filter {
+    font-size: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    font-family: Avenir, sans-serif;
+    box-shadow: 0 0 9px 1px rgba(67, 120, 255, 0.21);
+    margin-right: 20px;
+    border-radius: 10px;
+    color: #4378FF;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none !important;
+}
+
+select.filter:hover,
+select.filter:active {
+    background: rgba(67, 120, 255, 0.1);
+}
+
+.filters-title {
+    margin-right: 20px;
+}

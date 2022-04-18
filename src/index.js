@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Businesses from './components/Businesses/Businesses';
 
 const MainPage = React.lazy(() => import('./components/MainPage/MainPage'));
 const AboutUs = React.lazy(() => import('./components/AboutUs/AboutUs'));
@@ -19,6 +20,7 @@ ReactDOM.render(
                         <Route path={"/"} element={<MainPage/>}/>
                         <Route path={"/about-us"} element={<AboutUs/>}/>
                         <Route path={"/contact"} element={<Contact/>}/>
+                        <Route path={"/businesses"} element={<Businesses/>}/>
                         <Route path={"businesses/:receiverId"} element={<Receiver/>}/>
                         <Route path={"*"} element={<NotFound/>}/>
                     </Routes>
