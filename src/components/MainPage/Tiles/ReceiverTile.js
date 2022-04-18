@@ -8,7 +8,7 @@ const ReceiverTile = ({
     title,
     description,
     onButtonClick,
-    buttonHref,
+    href,
     loading = false,
     background = null,
 }) => {
@@ -18,35 +18,34 @@ const ReceiverTile = ({
 
     if (background) {
         style = {
-            background: `linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${background})`,
-            backgroundSize: 'cover',
+            backgroundImage: `url(${background})`
         };
 
         button = <SecondaryButton type={"button"} text={"Support now"} onClick={onButtonClick} />;
     }
 
     return (
-        <div className={`${classes.tile} ${background? classes.dark : ''} ${loading? classes.loading : ''}`} style={style}>
-            <div className={classes.content}>
-                <div>
-                    <div className={classes.header}>
-                        {title}
+        <div className={`${classes.tile} ${background ? classes.dark : ''} ${loading? classes.loading : ''}`} style={style}>
+            <Link to={href ?? '/'}>
+                <div className={classes.content}>
+                    <div>
+                        <div className={classes.header}>
+                            {title}
+                        </div>
                     </div>
-                </div>
-                <div className={classes['paragraph-container']}>
-                    <p>
-                        {description}
-                    </p>
-                </div>
-                {
-                    !loading &&
-                    <div className={classes['button-container']}>
-                        <Link to={buttonHref}>
+                    <div className={classes['paragraph-container']}>
+                        <p>
+                            {description}
+                        </p>
+                    </div>
+                    {
+                        !loading &&
+                        <div className={classes['button-container']}>
                             {button}
-                        </Link>
-                    </div>
-                }
-            </div>
+                        </div>
+                    }
+                </div>
+            </Link>
         </div>
     );
 };
