@@ -7,8 +7,41 @@
     border-radius: 34px;
 }
 
+.tile a {
+    text-decoration: none;
+}
+
+.tile a:hover {
+}
+
 .tile.dark {
+    background-size: cover;
+}
+
+.tile.dark .content {
+    border-radius: 34px;
     color: #ffffff;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.tile.dark:hover .content{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.tile.dark:hover .content .header,
+.tile.dark:hover .content p {
+    color: transparent;
+}
+
+.tile.dark:hover .content button  {
+    background: rgba(255, 255, 255, 0.9) !important;
+    color: #4378FF !important;
+    border: none !important;
+}
+
+.tile.dark:hover .content button:hover  {
+    background: rgba(67, 120, 255, 0.6) !important;
+    color: #ffffff !important;
 }
 
 .tile .header {
