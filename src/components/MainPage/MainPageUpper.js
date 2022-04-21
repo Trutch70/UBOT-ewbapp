@@ -18,11 +18,6 @@ const MainPageUpper = () => {
                     small businesses survive and support the Ukrainian economy. When the war is over and justice
                     triumphs, <strong>they will help Ukrainians regain peace, stability and a sense of security.</strong>
                 </p>
-                <div className={classes['main-button-container']}>
-                    <Link to={"/about-us"}>
-                        <MainButton type={"button"} text={"Find out more"}/>
-                    </Link>
-                </div>
             </ContentContainer>
         </section>
     );

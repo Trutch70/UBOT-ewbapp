@@ -22,12 +22,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #404040;
-}
-
-@media (min-width: 1400px) {
-    body {
-        font-size: 20px;
-    }
+    font-size: 14px;
+    line-height: 20px;
 }
 
 #root {
@@ -38,6 +34,7 @@ body {
 
 .page-content {
     flex: 1;
+    padding-top: 85px;
 }
 
 code {
@@ -49,7 +46,7 @@ code {
 }
 
 .text-yellow {
-    color: #FFB800 !important;
+    color: #FFDD55 !important;
 }
 
 .slick-list {
@@ -62,6 +59,11 @@ code {
 }
 
 @media (min-width: 1400px) {
+    body {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
     .page-content {
         padding-top: 135px;
     }

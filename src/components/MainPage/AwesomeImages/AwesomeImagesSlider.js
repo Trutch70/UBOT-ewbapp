@@ -14,6 +14,15 @@ const AwesomeImagesSlider = () => {
         autoplaySpeed: 4000,
         pauseOnHover: true,
         adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     };
 
     return (

@@ -1,0 +1,153 @@
+.steps {
+    display: grid;
+    grid-template-columns: 1fr minmax(65px, 0.25fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    margin-bottom: 30px;
+}
+
+.steps .step {
+    border-radius: 20px;
+    background: #F4F4F4;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.steps .step .step-icon {
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+}
+
+.steps .step .step-text {
+    display: inline-block;
+}
+
+.steps .step .step-icon > div {
+    background-size: contain;
+    margin: auto;
+    background-repeat: no-repeat;
+}
+
+.steps .step .step-icon > .case {
+    background-image: url("../../assets/case.svg");
+}
+
+.steps .step .step-icon > .read {
+    background-image: url("../../assets/read.svg");
+}
+
+.steps .step .step-icon > .donate {
+    background-image: url("../../assets/donate.svg");
+}
+
+.arrow {
+    border-radius: 19px;
+    background: #F4F4F4;
+    display: flex;
+    align-items: center;
+    padding: 28px 12px;
+}
+
+.arrow.done {
+    padding: 25px 27px;
+}
+
+.arrow-yellow {
+    background-image: url("../../assets/arrow-yellow.svg");
+}
+
+.arrow-blue {
+    background-image: url("../../assets/arrow-blue.svg");
+}
+
+.done > div {
+    transform: none !important;
+    background-image: url("../../assets/done.svg");
+}
+
+.arrow > div {
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transform: rotate(90deg);
+}
+
+
+.steps .step .step-icon {
+    width: 47px;
+    height: 47px;
+}
+
+.steps .step .step-icon > div {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+.steps .step .step-icon-read > div {
+    margin: 10px 7px 10px 13px;
+}
+
+.steps .step .step-text {
+    margin-left: 13px;
+}
+
+@media (min-width: 1400px) {
+    .steps {
+        grid-template-columns: 1.3fr 0.5fr 1fr 0.5fr 1.3fr;
+        margin-bottom: 80px;
+    }
+
+    .steps .step {
+        padding: 25px 38px;
+        font-size: 25px;
+        line-height: 40px;
+        border-radius: 33px;
+    }
+
+    .steps .step .step-icon {
+        width: 96px;
+        height: 96px;
+    }
+
+    .steps .step .step-icon > div {
+        width: 45px;
+        height: 45px;
+        margin: 25px;
+    }
+
+    .steps .step .step-icon-read > div {
+        margin: 25px 21px 25px 29px;
+    }
+
+    .steps .step .step-text {
+        margin-left: 23px;
+    }
+
+    .steps .done {
+        display: none;
+    }
+
+    .arrow {
+        display: flex;
+        align-items: center;
+        padding: 60px 60px;
+        background: transparent;
+    }
+
+    .arrow > div {
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        transform: none;
+    }
+}

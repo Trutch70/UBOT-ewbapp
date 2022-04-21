@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Header.module.css';
 import { NavLink } from 'react-router-dom';
-import hamburger from '../../../assets/iconmonstr-menu-1.svg';
+import hamburger from '../../../assets/hamburger.svg';
 
 const Header = () => {
     const toggleOpenMenu = (event) => {

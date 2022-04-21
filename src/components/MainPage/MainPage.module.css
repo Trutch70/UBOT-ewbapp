@@ -1,7 +1,6 @@
 .tiles {
     display: grid;
-    grid-template-columns: repeat(4,minmax(0,1fr));
-    grid-gap: 2rem;
+    grid-gap: 10px;
 }
 
 .sub-header {
@@ -10,6 +9,9 @@
 
 .middle-section {
     background: #F4F4F4;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
 
 .insta {
@@ -19,8 +21,8 @@
 
 .insta a {
     color: #818181;
-    font-size: 19px;
-    line-height: 57px;
+    font-size: 10px;
+    line-height: 18px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -33,19 +35,57 @@
 
 .insta .link {
     font-family: Maven Pro, sans-serif;
-    margin-left: 14px;
+    margin-left: 9px;
 }
 
 .insta img {
-    border-radius: 10px;
-    height: 30px;
-    width: 30px;
-    background: linear-gradient(49.12deg, #FFDD55 6.62%, #FF543E 50.06%, #C837AB 93.5%);;
+    border-radius: 5px;
+    height: 15px;
+    width: 15px;
+    background: linear-gradient(49.12deg, #FFDD55 6.62%, #FF543E 50.06%, #C837AB 93.5%);
+}
+
+.main-page-upper {
+    margin-bottom: 25px;
+}
+
+.main-header {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+}
+
+.sub-header {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.main-section {
+    padding-bottom: 30px;
+}
+
+.middle-section .paragraph-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.middle-section .paragraph-container p {
+    text-align: center;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.bottom-section {
+    padding: 30px 0;
 }
 
 @media (min-width: 1400px) {
     .tiles {
         grid-gap: 1.7rem;
+        grid-template-columns: repeat(4,minmax(0,1fr));
     }
 
     .main-page-upper {
@@ -72,10 +112,6 @@
         text-align: left;
     }
 
-    .main-button-container {
-        padding: 20px 0;
-    }
-
     .sub-header {
         font-size: 36px;
         line-height: 50px;
@@ -89,7 +125,6 @@
     .middle-section {
         padding-top: 39px;
         padding-bottom: 23px;
-        text-align: center;
     }
 
     .middle-section .paragraph-container {
@@ -118,12 +153,27 @@
     .insta {
         margin-top: 23px;
     }
+
+    .insta a {
+        font-size: 19px;
+        line-height: 57px;
+    }
+
+    .insta img {
+        border-radius: 10px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .insta .link {
+        margin-left: 14px;
+    }
 }
 
 @media (min-width: 1900px) {
     .main-page-upper {
         width: 80%;
-        margin-bottom: 90px;
+        margin-bottom: 75px;
     }
 
     .main-header {
@@ -162,7 +212,6 @@
     .middle-section {
         padding-top: 49px;
         padding-bottom: 23px;
-        text-align: center;
     }
 
     .middle-section .paragraph-container {
