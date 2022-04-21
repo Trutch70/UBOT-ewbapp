@@ -1,8 +1,6 @@
 import React from 'react';
 import classes from './MainPage.module.css';
-import MainButton from '../Common/MainButton';
 import ContentContainer from '../Common/ContentContainer';
-import { Link } from 'react-router-dom';
 
 const MainPageUpper = () => {
     return (
