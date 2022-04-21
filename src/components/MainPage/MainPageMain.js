@@ -3,6 +3,7 @@ import classes from './MainPage.module.css';
 import Tiles from '../Common/Tiles/Tiles';
 import useReceiversProvider from '../../hooks/UseReceiversProvider';
 import ContentContainer from '../Common/ContentContainer';
+import Steps from './Steps';
 
 const MainPageMain = () => {
     const [receivers, setReceivers] = useState([]);
@@ -19,8 +20,12 @@ const MainPageMain = () => {
     return (
         <section className={`${classes['main-section']}`}>
             <ContentContainer>
+                <div className={`${classes['sub-header']} text-blue`}>
+                    How can you provide the support?
+                </div>
+                <Steps />
                 <div className={`${classes['sub-header']} text-yellow`}>
-                    Support those who, despite the war, still operate in Ukraine:
+                    Despite the war, they still operate in Ukraine:
                 </div>
                 <Tiles receivers={receivers} loading={loading} loadingTilesAmount={4} />
             </ContentContainer>

@@ -4,7 +4,23 @@
     box-shadow: 0 4px 19px 1px rgba(67, 120, 255, 0.2);
     display: flex;
     align-items: stretch;
-    border-radius: 34px;
+    border-radius: 13px;
+}
+
+.tile .content {
+    padding: 10px;
+}
+
+.tile .header {
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.tile .paragraph-container p{
+    min-height: 45px;
+    line-height: 15px;
+    font-size: 10px;
+    margin-top: 5px;
 }
 
 .tile a {
@@ -16,10 +32,17 @@
 
 .tile.dark {
     background-size: cover;
+    box-shadow: none;
+}
+
+.tile button {
+    padding: 3px 13px !important;
+    font-size: 9px !important;
+    line-height: 16px !important;
 }
 
 .tile.dark .content {
-    border-radius: 34px;
+    border-radius: 13px;
     color: #ffffff;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
@@ -77,6 +100,10 @@
         padding: 21px 21px 31px;
     }
 
+    .tile.dark .content {
+        border-radius: 26px;
+    }
+
     .tile .header {
         font-size: 20px;
         line-height: 27px;
@@ -102,6 +129,10 @@
 
     .tile .content {
         padding: 27px 28px 40px;
+    }
+
+    .tile.dark .content {
+        border-radius: 34px;
     }
 
     .tile .header {

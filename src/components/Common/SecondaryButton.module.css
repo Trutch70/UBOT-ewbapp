@@ -5,6 +5,9 @@
     border: none;
     cursor: pointer;
     font-weight: bold;
+    padding: 3px 13px;
+    font-size: 9px;
+    line-height: 16px;
 }
 
 .secondary:hover {
