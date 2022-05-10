@@ -11,20 +11,20 @@
 
 @media (min-width: 1400px) {
     .footer-container {
-        padding: 44px 41px;
-        width: calc(100% - 88px);
-        display: grid;
-        grid-template-columns: minmax(0, 1.9fr) minmax(0, 1.9fr) minmax(0, 210px);
-        grid-gap: 70px;
+        padding: 8px 41px;
+        width: calc(100% - 82px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .footer .image {
         display: inline-block;
     }
 
-    .footer img{
-        width: 90px;
-        height: 90px;
+    .footer img {
+        width: 42px;
+        height: 42px;
     }
 
     .footer-info {
@@ -39,6 +39,7 @@
     .footer-icons {
         display: flex;
         justify-content: space-between;
+        width: 104px;
     }
 
     .footer p {
@@ -48,28 +49,24 @@
         font-weight: 400;
         margin: 0;
     }
-
-    .footer p strong {
-        font-weight: 700;
-    }
 }
 
 @media (min-width: 1900px) {
     .footer-container {
-        padding: 55px 90px;
+        padding: 20px 90px;
         width: calc(100% - 180px);
-        display: grid;
-        grid-template-columns: minmax(0, 1.9fr) minmax(0, 1.9fr) minmax(0, 285px);
-        grid-gap: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .footer .image {
         display: inline-block;
     }
 
-    .footer img{
-        width: 120px;
-        height: 120px;
+    .footer img {
+        width: 56px;
+        height: 56px;
     }
 
     .footer-info {
@@ -84,6 +81,7 @@
     .footer-icons {
         display: flex;
         justify-content: space-between;
+        width: 137px;
     }
 
     .footer p {
@@ -92,9 +90,5 @@
         font-size: 20px;
         font-weight: 400;
         margin: 0;
-    }
-
-    .footer p strong {
-        font-weight: 700;
     }
 }

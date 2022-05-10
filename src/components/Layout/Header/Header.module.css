@@ -62,8 +62,6 @@
 
 .logo {
     display: inline-block;
-    margin-left: auto;
-    background: grey;
 }
 
 .navbar ul {
@@ -87,6 +85,13 @@
 }
 
 @media (min-width: 1024px) {
+    .navigation-container {
+        padding: 0;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
     .navbar {
         height: auto;
     }
@@ -121,23 +126,33 @@
 
 @media (min-width: 1400px) {
     .navbar .container {
-        padding: 55px 44px 30px;
+        padding: 40px 44px 0;
     }
 
     .navbar ul > li {
         margin-right: 40px;
         line-height: 30px;
     }
+
+    .logo > img {
+        width: 195px;
+        height: 80px;
+    }
 }
 
 @media (min-width: 1900px) {
     .navbar .container {
-        padding: 55px 90px 40px;
+        padding: 40px 90px 0;
     }
 
     .navbar ul > li {
         margin-right: 42px;
         font-size: 26px;
         line-height: 30px;
+    }
+
+    .logo > img {
+        width: 195px;
+        height: 80px;
     }
 }

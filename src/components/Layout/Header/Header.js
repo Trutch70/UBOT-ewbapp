@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './Header.module.css';
 import { NavLink } from 'react-router-dom';
 import hamburger from '../../../assets/hamburger.svg';
+import logo from '../../../assets/logo.jpeg';
 
 const Header = () => {
     const toggleOpenMenu = (event) => {
@@ -17,7 +18,12 @@ const Header = () => {
                     <div className={classes["mobile-nav-toggle"]} onClick={toggleOpenMenu}>
                         <img src={hamburger} alt={"hamburger menu"}/>
                     </div>
-                    <div className={classes['navigation']}>
+                    <NavLink to={"/"}>
+                        <div className={classes.logo}>
+                            <img src={logo} alt={"ukraine back on track"}/>
+                        </div>
+                    </NavLink>
+                    <div className={classes.navigation}>
                         <ul>
                             <li>
                                 <NavLink to={"/"} className={({isActive}) => `${isActive ? classes.active : ''} text-blue`}>
@@ -36,9 +42,6 @@ const Header = () => {
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div className={classes.logo}>
-
                 </div>
             </div>
         </header>

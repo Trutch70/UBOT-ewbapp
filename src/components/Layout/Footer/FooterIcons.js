@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './Footer.module.css';
 import FooterImage from './FooterImage';
-import instaLogo from '../../../assets/Instagram_logo_2016.svg'
-import facebookLogo from '../../../assets/facebook-108-432507.png'
+import instaLogo from '../../../assets/insta.svg'
+import facebookLogo from '../../../assets/fb.svg'
 
 const FooterIcons = () => {
     return (
@@ -11,7 +11,7 @@ const FooterIcons = () => {
                 <img src={instaLogo} alt={"instagram"}/>
             </FooterImage>
             <FooterImage href={"https://www.facebook.com/Trutch.1"}>
-                <img style={{background: '#ffffff'}} src={facebookLogo} alt={"facebook"}/>
+                <img src={facebookLogo} alt={"facebook"}/>
             </FooterImage>
         </div>
     );

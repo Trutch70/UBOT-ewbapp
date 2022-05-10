@@ -76,9 +76,15 @@ code {
     .slick-prev:before,
     .slick-next:before
     {
-        font-size: 40px;
-        line-height: 1;
-        -webkit-text-stroke: thin rgba(67, 120, 255, 0.3);
+        background: #E2EAFF;
+    }
+
+    .slick-prev:before {
+        content: url("./assets/slider-backwards-arrow.svg");
+    }
+
+    .slick-next:before {
+        content: url("./assets/slider-forwards-arrow.svg");
     }
 }
 
@@ -88,12 +94,21 @@ code {
     }
 
     .slick-prev {
-        left: -65px;
+        left: -30px;
+    }
+
+    .slick-next {
+        right: 10px;
     }
 
     .slick-prev:before,
     .slick-next:before
     {
-        font-size: 60px;
+        display: flex;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
     }
 }
