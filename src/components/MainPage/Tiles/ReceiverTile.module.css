@@ -9,6 +9,11 @@
 
 .tile .content {
     padding: 10px;
+    color: #4378FF;
+}
+
+.tile:hover:not(.dark) {
+    background: rgba(67, 120, 255, 0.03);
 }
 
 .tile .header {
@@ -19,7 +24,7 @@
 .tile .paragraph-container p{
     min-height: 60px;
     line-height: 15px;
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 5px;
 }
 

@@ -1,5 +1,9 @@
 import React from 'react';
 import classes from './Steps.module.css';
+import arrowBlue from '../../assets/step-arrow-blue.svg';
+import arrowYellow from '../../assets/step-arrow-yellow.svg';
+import mobileArrowBlue from '../../assets/step-mobile-arrow-blue.svg';
+import mobileArrowYellow from  '../../assets/step-mobile-arrow-yellow.svg';
 
 const Steps = () => {
     return (
@@ -13,29 +17,28 @@ const Steps = () => {
                 </div>
             </div>
             <div className={classes.arrow}>
-                <div className={classes['arrow-blue']}></div>
+                <img src={window.innerWidth >= 1024 ? arrowBlue : mobileArrowBlue} alt={"arrow blue"}></img>
             </div>
             <div className={classes.step}>
-                <div className={`${classes['step-icon']} ${classes['step-icon-read']}`}>
-                    <div className={classes.read}/>
-                </div>
-                <div className={classes['step-text']}>
-                    Read their story
+                <div className={classes['step-container']}>
+                    <div className={`${classes['step-icon']} ${classes['step-icon-read']}`}>
+                        <div className={classes.read}/>
+                    </div>
+                    <div className={classes['step-text']}>
+                        Read their story
+                    </div>
                 </div>
             </div>
             <div className={classes.arrow}>
-                <div className={classes['arrow-yellow']}></div>
+                <img src={window.innerWidth >= 1024 ? arrowYellow : mobileArrowYellow} alt={"arrow yellow"}/>
             </div>
             <div className={classes.step}>
                 <div className={classes['step-icon']}>
                     <div className={classes.donate}/>
                 </div>
                 <div className={classes['step-text']}>
-                    Donate to the provided bank account
+                    Buy a product using social media networks / website or donate to the provided bank account
                 </div>
-            </div>
-            <div className={`${classes.arrow} ${classes.done}`}>
-                <div></div>
             </div>
         </div>
     );

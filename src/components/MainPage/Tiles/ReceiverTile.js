@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './ReceiverTile.module.css';
 import MainButton from '../../Common/MainButton';
-import { Link } from 'react-router-dom';
 import SecondaryButton from '../../Common/SecondaryButton';
+import CustomLink from '../../Common/CustomLink';
 
 const ReceiverTile = ({
     title,
@@ -26,7 +26,7 @@ const ReceiverTile = ({
 
     return (
         <div className={`${classes.tile} ${background ? classes.dark : ''} ${loading? classes.loading : ''}`} style={style}>
-            <Link to={href ?? '/'}>
+            <CustomLink to={href ?? '/'}>
                 <div className={classes.content}>
                     <div>
                         <div className={classes.header}>
@@ -45,7 +45,7 @@ const ReceiverTile = ({
                         </div>
                     }
                 </div>
-            </Link>
+            </CustomLink>
         </div>
     );
 };

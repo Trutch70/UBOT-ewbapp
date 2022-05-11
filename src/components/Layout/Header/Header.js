@@ -1,42 +1,49 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import classes from './Header.module.css';
 import { NavLink } from 'react-router-dom';
 import hamburger from '../../../assets/hamburger.svg';
 import logo from '../../../assets/logo.jpeg';
 
 const Header = () => {
+    const navContainerRef = useRef();
+
     const toggleOpenMenu = (event) => {
         const container = event.target.closest(`.${classes["navigation-container"]}`);
 
         container.classList.toggle(classes.open);
     };
 
+    const onLinkClick = () => {
+        navContainerRef.current.classList.remove(classes.open);
+        window.scrollTo(0, 0);
+    }
+
     return (
         <header className={classes.navbar}>
             <div className={classes.container}>
-                <div className={classes["navigation-container"]}>
-                    <div className={classes["mobile-nav-toggle"]} onClick={toggleOpenMenu}>
-                        <img src={hamburger} alt={"hamburger menu"}/>
-                    </div>
-                    <NavLink to={"/"}>
+                <div ref={navContainerRef} className={classes["navigation-container"]}>
+                    <NavLink to={"/"} onClick={onLinkClick}>
                         <div className={classes.logo}>
                             <img src={logo} alt={"ukraine back on track"}/>
                         </div>
                     </NavLink>
+                    <div className={classes["mobile-nav-toggle"]} onClick={toggleOpenMenu}>
+                        <img src={hamburger} alt={"hamburger menu"}/>
+                    </div>
                     <div className={classes.navigation}>
                         <ul>
                             <li>
-                                <NavLink to={"/"} className={({isActive}) => `${isActive ? classes.active : ''} text-blue`}>
+                                <NavLink to={"/"} className={({isActive}) => `${isActive ? classes.active : ''} text-blue`} onClick={onLinkClick}>
                                     Ukraine: back on track
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to={"/about-us"} className={({isActive}) => `${isActive ? classes.active : ''} text-blue`}>
+                                <NavLink to={"/about-us"} className={({isActive}) => `${isActive ? classes.active : ''} text-blue`} onClick={onLinkClick}>
                                     About the project
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to={"/contact"} className={({isActive}) => `${isActive ? classes.active : ''} text-blue`}>
+                                <NavLink to={"/contact"} className={({isActive}) => `${isActive ? classes.active : ''} text-blue`} onClick={onLinkClick}>
                                     Contact
                                 </NavLink>
                             </li>
