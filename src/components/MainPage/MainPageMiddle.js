@@ -15,7 +15,7 @@ const MainPageMiddle = () => {
                     <p>
                         Everyone has their heroes. Our heroes are Ukrainians. Brave and proud people who stand for their land,
                         and their truth. We hope that our project will allow them to survive this difficult time and get back on
-                        track a little faster, as soon as Ukraine repels the unjustified agression by Russia. <strong>#standwithukraine</strong>
+                        track a little faster, as soon as Ukraine repels the unjustified aggression by Russia. <strong>#standwithukraine</strong>
                     </p>
                 </div>
                 <div className={classes['slider-container']}>
