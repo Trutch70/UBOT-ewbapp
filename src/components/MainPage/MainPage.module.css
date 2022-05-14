@@ -93,7 +93,8 @@
 
     .support p {
         padding-right: 30px;
-        font-size: 15px;
+        font-size: 16px;
+        line-height: 25px;
     }
 
     .tiles {
@@ -187,6 +188,7 @@
     .support p{
         padding-right: 120px;
         font-size: 20px;
+        line-height: 30px;
     }
 
     .main-page-upper {
