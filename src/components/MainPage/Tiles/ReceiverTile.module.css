@@ -8,6 +8,9 @@
 }
 
 .tile .content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     padding: 10px;
     color: #4378FF;
 }
@@ -17,19 +20,20 @@
 }
 
 .tile .header {
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 15px;
+    line-height: 20px;
 }
 
 .tile .paragraph-container p{
     min-height: 60px;
-    line-height: 15px;
-    font-size: 13px;
+    line-height: 16px;
+    font-size: 14px;
     margin-top: 5px;
 }
 
 .tile a {
     text-decoration: none;
+    width: 100%;
 }
 
 .tile a:hover {
@@ -43,7 +47,7 @@
 
 .tile button {
     padding: 3px 13px !important;
-    font-size: 9px !important;
+    font-size: 11px !important;
     line-height: 16px !important;
 }
 
@@ -79,11 +83,6 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     -webkit-line-clamp: 1;
-}
-
-.tile .content {
-    display: flex;
-    flex-direction: column;
 }
 
 .tile .paragraph-container p {

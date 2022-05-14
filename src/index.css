@@ -22,7 +22,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #404040;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
 }
 
@@ -56,6 +56,14 @@ code {
 
 .slick-slide > div {
     padding: 0 1rem;
+}
+
+.slick-prev {
+    left: -20px;
+}
+
+.slick-next {
+    right: -20px;
 }
 
 @media (min-width: 760px) {

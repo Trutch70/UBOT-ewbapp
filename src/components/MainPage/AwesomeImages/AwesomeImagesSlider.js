@@ -11,14 +11,21 @@ const AwesomeImagesSlider = () => {
         slidesToShow: 4,
         slidesToScroll: 2,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 6000,
         pauseOnHover: true,
         adaptiveHeight: true,
         responsive: [
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1441,
+                settings: {
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                 }
             }

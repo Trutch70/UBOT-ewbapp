@@ -3,10 +3,6 @@
     grid-gap: 10px;
 }
 
-.sub-header {
-    font-weight: 700;
-}
-
 .middle-section {
     background: #F4F4F4;
     text-align: center;
@@ -21,7 +17,7 @@
 
 .insta a {
     color: #818181;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 18px;
     text-decoration: none;
     display: flex;
@@ -52,14 +48,15 @@
 .main-header {
     font-size: 28px;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 34px;
     text-align: left;
 }
 
 .sub-header {
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 22px;
     margin-bottom: 15px;
+    font-weight: 700;
 }
 
 .main-section {
@@ -74,8 +71,8 @@
 
 .middle-section .paragraph-container p {
     text-align: center;
-    font-size: 10px;
-    line-height: 15px;
+    font-size: 13px;
+    line-height: 17px;
 }
 
 .bottom-section {
