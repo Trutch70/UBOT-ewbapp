@@ -36,10 +36,7 @@
     width: 100%;
 }
 
-.tile a:hover {
-}
-
-.tile.dark {
+    .tile.dark {
     background-size: cover;
     box-shadow: none;
     background-position: 50% 50%;

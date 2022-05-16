@@ -4,7 +4,7 @@ import useReceiversProvider  from '../../hooks/UseReceiversProvider';
 import ContentContainer from '../Common/ContentContainer';
 import classes from './Receiver.module.css';
 import defaultImage from '../../assets/default-image.png';
-import locationIcon from '../../assets/iconmonstr-location-1.svg';
+import ReceiverDescription from './ReceiverDescription';
 
 const Receiver = () => {
     const [receiver, setReceiver] = useState({});
@@ -35,28 +35,13 @@ const Receiver = () => {
     return (
         <div className={"page-content"}>
             {
-                !error &&
+                !error && receiver &&
                 <ContentContainer>
                     <div className={classes.container}>
-                        <div className={classes['image-container']}>
-                            <img src={image} alt={"business"} />
+                        <div className={classes['receiver-images']}>
+                            <img src={image} alt={`Ukraine ${receiver.name} from ${receiver.location ? receiver.location.name : 'unknown'}`}/>
                         </div>
-                        <div className={classes['info-container']}>
-                            <div className={classes['city-container']}>
-                                <img src={process.env.PUBLIC_URL + '/logo512.png'} className={classes.icon} alt={"placeholder"}/>
-                                <img src={locationIcon} className={`${classes.icon} ${classes.location}`} alt={"location icon"}/>
-                                <div className={classes.city}>{receiver.location ? receiver.location.name : "Exact Location not given"}</div>
-                            </div>
-                            <div className={classes.header}>
-                                {receiver.name}
-                            </div>
-                            <div className={classes.description}>
-                                {receiver.description}
-                            </div>
-                            <div>
-                                <strong>IBAN: </strong>{receiver.bank_account}
-                            </div>
-                        </div>
+                        { typeof receiver !== 'undefined' && <ReceiverDescription receiver={receiver} />}
                     </div>
                 </ContentContainer>
             }
