@@ -12,26 +12,24 @@ const SocialMediaIcon = (
         right = false
     }
 ) => {
-    let iconClass = classes.facebook;
     let imgSource = facebook;
 
     switch (type) {
         case 'instagram':
-            iconClass = classes.insta;
             imgSource = instagram;
             break;
         case 'github':
-            iconClass = classes.github;
             imgSource = github;
             break;
         case 'behance':
-            iconClass = classes.behance;
             imgSource = behance;
+            break;
+        default:
             break;
     }
 
     return (
-        <a href={link} target={"_blank"} rel={"noreferrer"} className={`${classes.icon} ${iconClass} ${right ? classes.right : ''}`}>
+        <a href={link} target={"_blank"} rel={"noreferrer"} className={`${classes.icon} ${right ? classes.right : ''}`}>
             <img src={imgSource} alt={"social media"} />
         </a>
     );
