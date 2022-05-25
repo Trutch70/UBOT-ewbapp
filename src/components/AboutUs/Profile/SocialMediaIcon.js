@@ -31,7 +31,7 @@ const SocialMediaIcon = (
     }
 
     return (
-        <a href={link} target={"_blank"} className={`${classes.icon} ${iconClass} ${right ? classes.right : ''}`}>
+        <a href={link} target={"_blank"} rel={"noreferrer"} className={`${classes.icon} ${iconClass} ${right ? classes.right : ''}`}>
             <img src={imgSource} alt={"social media"} />
         </a>
     );
