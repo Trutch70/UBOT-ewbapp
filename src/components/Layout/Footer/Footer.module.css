@@ -59,6 +59,7 @@
 
     .footer-icons {
         width: 104px;
+        margin: unset;
     }
 
     .footer p {

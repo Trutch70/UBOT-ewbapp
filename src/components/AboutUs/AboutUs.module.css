@@ -44,6 +44,10 @@
     line-height: 15px;
 }
 
+.paragraph span {
+    display: block;
+}
+
 .get-involved {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -53,28 +57,195 @@
     width: 100%;
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 760px) {
     .about-us-section {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
-    .about-us-section .left{
-        padding-right: 50px;
-    }
-
-    .about-us-section .right{
-        padding-left: 50px;
+        padding-top: 20px;
+        padding-bottom: 30px;
     }
 
     .upper-container {
-        display: grid;
-        grid-template-columns: 1.7fr 1fr;
+        margin-bottom: 0;
+    }
+
+    .main-header {
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 10px;
+    }
+
+    .upper-container .paragraph {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .who-we-are {
+        margin-bottom: 0;
+    }
+
+    .who-we-are .header {
+        margin-bottom: 20px;
     }
 
     .header {
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .upper-container .paragraph {
+        margin-top: 15px;
+    }
+
+    .why-main {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .get-involved {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        margin: 0;
+    }
+
+    .get-involved .paragraph {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-us-section {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .upper-container {
+        width: 85%;
+    }
+
+    .main-header {
+        font-size: 50px;
+        line-height: 65px;
+        margin-bottom: 12px;
+    }
+
+    .upper-container .paragraph {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .who-we-are .header {
+        margin-bottom: 25px;
+    }
+
+    .header {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 12px;
+    }
+
+    .paragraph {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .paragraph .lower {
+        margin-top: 2rem;
+    }
+
+    .upper-container .paragraph {
+        margin-top: 15px;
+    }
+
+    .why-main {
+        text-align: left;
+        width: 90%;
+    }
+
+    .get-involved {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    .get-involved .paragraph {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .about-us-section {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .main-header {
+        font-size: 70px;
+        line-height: 85px;
+        margin-bottom: 18px;
+    }
+
+    .upper-container .paragraph {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .who-we-are .header {
+        margin-bottom: 25px;
+    }
+
+    .header {
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 16px;
+    }
+
+    .paragraph {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .upper-container .paragraph {
+        margin-top: 25px;
+    }
+
+    .get-involved {
+        padding-top: 60px;
+    }
+}
+
+@media (min-width: 1900px) {
+    .about-us-section {
+        padding-top: 63px;
+        padding-bottom: 70px;
+    }
+
+    .upper-container {
+        width: 75%;
+    }
+
+    .main-header {
         font-size: 85px;
         line-height: 109px;
+        margin-bottom: 18px;
+    }
+
+    .upper-container .paragraph {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .who-we-are .header {
+        margin-bottom: 33px;
+    }
+
+    .header {
+        font-size: 47px;
+        line-height: 68px;
+        margin-bottom: 20px;
     }
 
     .paragraph {
@@ -82,33 +253,13 @@
         line-height: 40px;
     }
 
-    .paragraph .lower {
-        margin-top: 1rem;
-    }
-
-    .about-us-section .paragraph {
-        margin-top: 40px;
-    }
-
-    .about-us-section .paragraph-indent-right {
-        padding-right: 40px;
-    }
-
     .upper-container .paragraph {
-        margin-top: 70px;
-    }
-
-    .profiles {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-gap: 24px;
-        margin-right: 80px;
+        margin-top: 30px;
     }
 
     .get-involved {
-        text-align: center;
-        padding-top: 160px;
-        padding-bottom: 130px;
+        padding-top: 63px;
+        padding-bottom: 51px;
     }
 
     .get-involved .header {
@@ -116,6 +267,6 @@
     }
 
     .get-involved .paragraph {
-        margin: 0 170px;
+        margin-top: 40px;
     }
 }

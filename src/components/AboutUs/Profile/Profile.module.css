@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 0.31fr 0.69fr;
     overflow: hidden;
-    min-height: 130px;
+    min-height: 170px;
 }
 
 .profile .img-container img {
@@ -45,44 +45,138 @@
     line-height: 15px;
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 760px) {
+    .tiles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+
     .profile {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
+        border-radius: 15px;
+    }
+
+    .profile .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .profile .icon.right {
+        margin-left: 8px;
     }
 
     .profile img {
-        height: 112px;
-        width: 112px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .profile .content {
+        padding: 10px;
     }
 
     .profile .name {
-        font-size: 50px;
-        line-height: 100px;
+        font-size: 13px;
+        line-height: 25px;
         font-weight: 700;
-        margin-left: 25px;
     }
 
-    .profile .social {
-        margin-left: auto;
+    .profile .description {
+        font-size: 13px;
+        line-height: 15px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .tiles {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
     }
 
-    .profile .social img {
-        width: 55px;
-        height: 55px;
+    .profile {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1.5fr;
+        border-radius: 20px;
     }
 
-    .profile .social .facebook {
-        margin-left: 9px;
+    .profile .img-container {
+        max-height: 280px;
     }
 
-    .profile .social a img {
-        border-radius: 15px;
-        background: #ffffff;
+    .profile .icon {
+        width: 25px;
+        height: 25px;
     }
 
-    .profile a:hover img {
-        box-shadow: 0 0 0.2em gray;
+    .profile .icon.right {
+        margin-left: 10px;
+    }
+
+    .profile img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .profile .content {
+        display: block;
+        padding: 18px 20px 25px;
+    }
+
+    .profile .name {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .profile .description {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .profile a:hover.icon {
+        border-radius: 20%;
+        box-shadow: 0 0 0.5em grey;
+        background: rgba(128, 128, 128, 0.4);
+    }
+}
+
+@media (min-width: 1900px) {
+    .tiles {
+        grid-gap: 31px;
+    }
+
+    .profile {
+        grid-template-rows: 1fr 1.5fr;
+        border-radius: 34px;
+    }
+
+    .profile .img-container {
+        max-height: 327px;
+    }
+
+    .profile .icon {
+        width: 39px;
+        height: 39px;
+    }
+
+    .profile .icon.right {
+        margin-left: 15px;
+    }
+
+    .profile img {
+        height: 39px;
+        width: 39px;
+    }
+
+    .profile .content {
+        padding: 20px 30px 35px;
+    }
+
+    .profile .name {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .profile .description {
+        font-size: 20px;
+        line-height: 35px;
     }
 }

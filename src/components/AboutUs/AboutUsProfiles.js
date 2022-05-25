@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import AboutUsProfilesSlider from './Profile/AboutUsProfilesSlider';
 import traczyk from '../../assets/traczyk.JPG';
 import dianka from '../../assets/dianka.png';
+import AboutUsProfileTiles from './Profile/AboutUsProfileTiles';
 
 const AboutUsProfiles = () => {
     const authors = [
@@ -67,8 +68,20 @@ const AboutUsProfiles = () => {
         },
     ];
 
+    const [mobile, setMobile] = useState(true);
+
+    useEffect(() => {
+        const width = window.innerWidth;
+        if (width > 759) {
+            setMobile(false);
+        }
+    }, []);
+
     return (
-        <AboutUsProfilesSlider authors={authors}/>
+        <>
+            {mobile && <AboutUsProfilesSlider authors={authors}/>}
+            {!mobile && <AboutUsProfileTiles  authors={authors}/>}
+        </>
     );
 };
 
