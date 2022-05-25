@@ -2,8 +2,55 @@
     background: #F4F4F4;
 }
 
-.header {
+.main-header {
     font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 18px;
+}
+
+.upper-container {
+    margin-bottom: 55px;
+}
+
+.header {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.upper-container .paragraph {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.who-we-are {
+    margin-bottom: 30px;
+}
+
+.who-we-are .header {
+    margin-bottom: 20px;
+}
+
+.why-main {
+    padding-top: 18px;
+    padding-bottom: 22px;
+    text-align: center;
+}
+
+.paragraph {
+    margin-top: 8px;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.get-involved {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.get-involved-header img {
+    width: 100%;
 }
 
 @media (min-width: 1900px) {
@@ -33,6 +80,10 @@
     .paragraph {
         font-size: 25px;
         line-height: 40px;
+    }
+
+    .paragraph .lower {
+        margin-top: 1rem;
     }
 
     .about-us-section .paragraph {

@@ -3,7 +3,6 @@ import AboutUsUpper from './AboutUsUpper';
 import classes from './AboutUs.module.css';
 import AboutUsWhoWeAre from './AboutUsWhoWeAre';
 import AboutUsWhyWeDoIt from './AboutUsWhyWeDoIt';
-import AboutUsProfiles from './AboutUsProfiles';
 import AboutUsGetInvolved from './AboutUsGetInvolved';
 
 const AboutUs = () => {
@@ -12,7 +11,6 @@ const AboutUs = () => {
             <AboutUsUpper />
             <AboutUsWhoWeAre />
             <AboutUsWhyWeDoIt />
-            <AboutUsProfiles />
             <AboutUsGetInvolved />
         </div>
     );

@@ -1,27 +1,24 @@
 import React from 'react';
 import classes from './Profile.module.css';
-import facebookLogo from '../../../assets/facebook-108-432507.png';
-import instaLogo from '../../../assets/Instagram_logo_2016.svg';
+import SocialMediaIcon from './SocialMediaIcon';
 
 const Profile = ({
-    name,
-    image,
-    instagram,
-    facebook,
+    author
 }) => {
     return (
-        <div className={classes.profile}>
-            <img src={image} alt={"team member"}/>
-            <div className={`${classes.name} text-blue`}>
-                {name}
+        <div data-query={"profile"} className={classes.profile}>
+            <div className={classes['img-container']}>
+                <img src={author.image} alt={"team member"}/>
             </div>
-            <div className={classes.social}>
-                <a className={classes.instagram} href={instagram} target={"_blank"} rel={"noreferrer"}>
-                    <img src={instaLogo} alt={"instagram"}/>
-                </a>
-                <a className={classes.facebook} href={facebook} target={"_blank"} rel={"noreferrer"}>
-                    <img src={facebookLogo} alt={"facebook"}/>
-                </a>
+            <div className={classes.content}>
+                <SocialMediaIcon type={author.icons[0].type} link={author.icons[0].link}/>
+                <SocialMediaIcon type={author.icons[1].type} link={author.icons[1].link} right={true}/>
+                <div className={classes.name}>
+                    My name is {author.name}.
+                </div>
+                <div className={classes.description}>
+                    {author.description}
+                </div>
             </div>
         </div>
     );

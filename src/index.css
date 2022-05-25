@@ -66,6 +66,36 @@ code {
     right: -20px;
 }
 
+.slick-dots {
+    bottom: -15px;
+}
+
+.slick-dots li {
+    width: 10px;
+    height: 10px;
+    margin: 0;
+}
+
+.slick-dots li button {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+}
+
+.slick-dots li button:before {
+    color: #4378FF;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    opacity: 30%;
+    font-size: 5px;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #4378FF;
+}
+
 @media (min-width: 760px) {
     body {
         font-size: 15px;

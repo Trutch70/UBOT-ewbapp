@@ -1,6 +1,4 @@
 import React from 'react';
-import AwesomeImage from '../MainPage/AwesomeImages/AwesomeImage';
-import awesomeImage from '../../assets/awesome/awesome1.jpeg';
 import ContentContainer from '../Common/ContentContainer';
 import classes from './AboutUs.module.css';
 
@@ -9,19 +7,20 @@ const AboutUsUpper = () => {
         <section>
             <div className={classes['upper-container']}>
                 <ContentContainer>
-                    <div className={classes.header}>
+                    <div className={classes['main-header']}>
                         <span className={"text-blue"}>The Ukrainian economy</span>
                         <br/>
-                        <span className={"text-yellow"}>needs our support</span>
+                        <span className={"text-yellow"}>needs your support</span>
                     </div>
                     <div className={classes.paragraph}>
-                        <strong>On February 24, 2022, our hearts stopped for a moment. However, we could not stand still and watch how the Russian army is destroying beautiful Ukrainian cities.</strong>
-                        <br/>
-                        <br/>
-                        Knowing that professionals are already involved in humanitarian aid, we decided to bring even a small glimmer of hope to the heroes who are fighting for their lives and their small businesses. We believe that Ukraine's victory is just around the corner. And when the war is over, the economy will need these small businesses like never before.
+                        <span>
+                            On February 24, 2022, our hearts stopped for a moment. However, we could not stand still and watch the Russian army destroying Ukraine. We wanted to act. We wanted to help the Ukrainian economy and bring even a small glimmer of hope to the heroes who remained in Ukraine.
+                        </span>
+                        <span className={classes.lower}>
+                            With 2 Poles, 2 Ukrainians on board and experience in marketing and IT, we decided to bring to life <strong>Ukraine: Back on Track</strong> - a project that aims to support businesses that still operate in Ukraine.
+                        </span>
                     </div>
                 </ContentContainer>
-                <AwesomeImage background={awesomeImage}/>
             </div>
         </section>
     );
