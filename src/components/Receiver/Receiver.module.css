@@ -51,7 +51,7 @@
     margin-top: 10px;
     margin-right: -10px;
     font-weight: bold;
-    font-size: 11px;
+    font-size: 13px;
 }
 
 @media (min-width: 1020px) {
@@ -60,6 +60,7 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
         min-height: 400px;
+        margin-bottom: 20px;
     }
 
     .receiver-description {
@@ -78,6 +79,10 @@
 }
 
 @media (min-width: 1400px) {
+    .container {
+        margin-bottom: 30px;
+    }
+
     .receiver-top span {
         font-size: 20px;
         line-height: 30px;
@@ -118,6 +123,10 @@
 }
 
 @media (min-width: 1900px) {
+    .container {
+        margin-bottom: 30px;
+    }
+
     .receiver-top span {
         font-size: 24px;
         line-height: 41px;
