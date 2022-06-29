@@ -33,7 +33,7 @@ const AboutUsProfiles = () => {
                     link: ''
                 }
             ],
-            description: 'I am living in Warsaw even since I was born. I am working as a software developer. But, some people don’t have it as nice as I do. Some people need to fight to survive, fight for their freedom. Ever since the war has started I am helping as I can. I believe, that this project can help with equalizing the chances for Ukrainian businesses, which would otherwise be bound to fail.',
+            description: 'I am living in Warsaw ever since I was born. I am working as a software developer. But, some people don’t have it as nice as I do. Some people need to fight to survive, fight for their freedom. Ever since the war has started I am helping as I can. I believe, that this project can help with equalizing the chances for Ukrainian businesses, which would otherwise be bound to fail.',
             image: traczyk
         },
         {
