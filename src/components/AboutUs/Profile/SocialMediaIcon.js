@@ -30,7 +30,7 @@ const SocialMediaIcon = (
 
     return (
         <a href={link} target={"_blank"} rel={"noreferrer"} className={`${classes.icon} ${right ? classes.right : ''}`}>
-            <img src={imgSource} alt={"social media"} />
+            <img src={imgSource} alt={"contact us on social media to help with helping ukrainian business"} />
         </a>
     );
 };

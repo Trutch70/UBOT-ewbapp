@@ -7,10 +7,10 @@ import facebookLogo from '../../../assets/fb.svg'
 const FooterIcons = () => {
     return (
         <div className={classes['footer-icons']}>
-            <FooterImage href={"https://www.instagram.com/dianakllp/"}>
+            <FooterImage href={"https://www.instagram.com/ukrainebackontrack/"}>
                 <img src={instaLogo} alt={"instagram"}/>
             </FooterImage>
-            <FooterImage href={"https://www.facebook.com/Trutch.1"}>
+            <FooterImage href={"#ubotfb"}>
                 <img src={facebookLogo} alt={"facebook"}/>
             </FooterImage>
         </div>

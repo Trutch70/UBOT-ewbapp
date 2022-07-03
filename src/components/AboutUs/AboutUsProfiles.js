@@ -11,11 +11,11 @@ const AboutUsProfiles = () => {
             icons: [
                 {
                     type: 'instagram',
-                    link: ''
+                    link: 'https://www.instagram.com/dianakllp/'
                 },
                 {
                     type: 'facebook',
-                    link: ''
+                    link: 'https://www.facebook.com/profile.php?id=100005092291303'
                 }
             ],
             description: 'I come from Ukraine but have lived in Warsaw for 5 years, where I graduated from university and now work. When Russia attacked Ukraine, I was terrified. Many of my relatives lost their jobs and lost any sense of stability within a few days. It was their stories that inspired me to help Ukrainian businesses that have to survive this difficult time somehow. That is how this project was born.',
@@ -26,11 +26,11 @@ const AboutUsProfiles = () => {
             icons: [
                 {
                     type: 'facebook',
-                    link: ''
+                    link: 'https://www.facebook.com/Trutch.1/'
                 },
                 {
                     type: 'github',
-                    link: ''
+                    link: 'https://github.com/Trutch70'
                 }
             ],
             description: 'I am living in Warsaw ever since I was born. I am working as a software developer. But, some people don’t have it as nice as I do. Some people need to fight to survive, fight for their freedom. Ever since the war has started I am helping as I can. I believe, that this project can help with equalizing the chances for Ukrainian businesses, which would otherwise be bound to fail.',
@@ -41,11 +41,11 @@ const AboutUsProfiles = () => {
             icons: [
                 {
                     type: 'instagram',
-                    link: ''
+                    link: 'https://www.instagram.com/aalimmkaa/'
                 },
                 {
                     type: 'behance',
-                    link: ''
+                    link: 'https://www.behance.net/alimovanasb89a'
                 }
             ],
             description: 'My name is Anastasia Alimova.\n' +
@@ -57,11 +57,11 @@ const AboutUsProfiles = () => {
             icons: [
                 {
                     type: 'instagram',
-                    link: ''
+                    link: 'https://www.instagram.com/glupiowyszlo'
                 },
                 {
                     type: 'facebook',
-                    link: ''
+                    link: 'https://www.facebook.com/bartlomiejluzak'
                 }
             ],
             description: 'My name is Bartek Luzak. I live in Łódź, Poland, where I work as a content creator. I have no influence on the Russian invasion, but any kind of support for Ukraine allows us to escape helplessness, even for a moment. The idea for Back on Track is brilliant in its simplicity. Just buy something nice from people who are trying to save their businesses when bombs are flying over their heads.'
