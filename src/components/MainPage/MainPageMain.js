@@ -26,8 +26,7 @@ const MainPageMain = () => {
                 <div className={classes.support}>
                     <p>
                         The easiest way to support small Ukrainian businesses is to buy their products. You can do this on their online stores or using social media.
-                        You can also support them with any amount of money deposited directly into their bank accounts. Thanks to financial aid, owners of businesses affected by the war will be able to pay bills and salaries, cover the production cost or purchase necessary materials.
-                        <br/><br/><strong>DISCLAIMER</strong>: International shipping is not available for all stores. You can support some small Ukrainian businesses only through donation.
+                        If you face trouble ordering the products, please reach out to us, and we will help!
                     </p>
                 </div>
                 <Steps />

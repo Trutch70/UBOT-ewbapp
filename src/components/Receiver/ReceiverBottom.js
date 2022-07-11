@@ -8,8 +8,14 @@ const ReceiverBottom = (
 ) => {
     return (
         <div className={classes['receiver-bottom']}>
-            Every little help makes a difference, no matter the amount 🇺🇦<br/>
-            IBAN: {receiver.bank_account}
+            <h2>{receiver.donation_description ?? ''}</h2>
+            <br/>
+            {
+                receiver['links'].map((link) => {
+                    return <div>{link.name}: <a href={link.url}>{link.url}</a></div>;
+                })
+            }
+
         </div>
     );
 };

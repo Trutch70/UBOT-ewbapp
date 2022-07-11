@@ -41,7 +41,7 @@ const Receiver = () => {
                         <div className={classes['receiver-images']}>
                             <img src={image} alt={`Ukraine ${receiver.name} from ${receiver.location ? receiver.location.name : 'unknown'}`}/>
                         </div>
-                        { typeof receiver !== 'undefined' && <ReceiverDescription receiver={receiver} />}
+                        { receiver.id && <ReceiverDescription receiver={receiver} />}
                     </div>
                 </ContentContainer>
             }

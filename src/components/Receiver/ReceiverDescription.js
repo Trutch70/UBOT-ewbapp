@@ -9,6 +9,7 @@ const ReceiverDescription = (
         receiver
     }
 ) => {
+
     return (
         <div className={classes['receiver-description']}>
             <ReceiverTop receiver={receiver} />
