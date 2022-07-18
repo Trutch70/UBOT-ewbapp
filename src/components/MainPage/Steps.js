@@ -37,7 +37,7 @@ const Steps = () => {
                     <div className={classes.donate}/>
                 </div>
                 <div className={classes['step-text']}>
-                    Buy a product using social media networks or a shop’s website.
+                    Buy a product using social media networks or a shop’s website
                 </div>
             </div>
         </div>

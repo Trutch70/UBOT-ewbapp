@@ -35,14 +35,14 @@
 }
 
 .content .name {
-    font-size: 10px;
-    line-height: 15px;
+    font-size: 12px;
+    line-height: 16px;
     font-weight: 800;
 }
 
 .content .description {
-    font-size: 10px;
-    line-height: 15px;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 @media (min-width: 760px) {

@@ -17,20 +17,6 @@ const ReceiverTop = (
                             City: {receiver.location.name} |
                         </span>
                     }
-                    {
-                        receiver.web_page &&
-                        <span className={classes['span-margin-left']}>
-                            <a href={receiver.web_page}>
-                                {receiver.web_page.replace('https://', '')}
-                            </a> |
-                        </span>
-                    }
-                    {
-                        receiver.instagram &&
-                        <span className={classes['span-margin-left']}>
-                            <a href={'https://instagram.com/' + receiver.instagram}>{`@${receiver.instagram}`}</a>
-                        </span>
-                    }
                 </>
             }
         </div>

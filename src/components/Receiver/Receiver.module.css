@@ -56,8 +56,19 @@
 }
 
 .receiver-bottom h2 {
-    color: #FFDD55;
     margin: 0;
+}
+
+.receiver-bottom a {
+    color: #3b58a6;
+}
+
+.receiver-bottom a:visited {
+    color: #3b58a6;
+}
+
+.receiver-bottom a:hover {
+    color: #FFB800;
 }
 
 @media (min-width: 1020px) {
