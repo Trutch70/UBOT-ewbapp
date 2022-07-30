@@ -11,7 +11,7 @@ const ReceiverBody = (
             <h1>
                 {receiver.name}
             </h1>
-            <p dangerouslySetInnerHTML={{__html: receiver.description.replace(/\n/, '<br/>')}}/>
+            <p dangerouslySetInnerHTML={{__html: receiver.description.replaceAll(/\n/g, '<br/>')}}/>
         </div>
     );
 };
