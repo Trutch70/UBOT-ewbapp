@@ -1,9 +1,12 @@
 import React from 'react';
 import classes from './AwesomeImage.module.css';
 
-const AwesomeImage = ({background}) => {
+const AwesomeImage = ({
+  background,
+  center = false
+}) => {
     const style = {
-            background: `url(${background})`,
+            background: `url(${background}) ${center ? '50% 50%' : ''}`,
             backgroundSize: 'cover',
         };
 

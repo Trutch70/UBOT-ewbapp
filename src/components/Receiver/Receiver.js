@@ -52,14 +52,10 @@ const Receiver = () => {
             <div className={classes['receiver-images']}>
                 <Slider {...sliderSettings}>
                     {
-                        console.log(receiver)
-                    }
-                    {
                         receiver.images.map((imagePath, index) => {
-                            console.log(index);
                             return (
                                 <div key={`awesome_${index}`}>
-                                    <AwesomeImage background={imagePath} />
+                                    <AwesomeImage background={imagePath} center={true} />
                                 </div>
                             )
                         })
