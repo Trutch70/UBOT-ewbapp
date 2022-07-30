@@ -73,11 +73,14 @@
 
 @media (min-width: 1020px) {
     .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
         min-height: 400px;
         margin-bottom: 20px;
+        display: flex;
+    }
+
+    .description-container {
+        display: inline-block;
+        width: calc(50% - 20px);
     }
 
     .receiver-description {
@@ -91,7 +94,9 @@
     }
 
     .container .receiver-images {
-        margin: 0;
+        display: inline-block;
+        width: calc(50% - 20px);
+        margin: 0 40px 0 0;
     }
 }
 
