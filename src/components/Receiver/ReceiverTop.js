@@ -12,9 +12,9 @@ const ReceiverTop = (
                 receiver &&
                 <>
                     {
-                        receiver.location &&
+                        receiver.locations &&
                         <span>
-                            City: {receiver.location.name} |
+                            City: {receiver.locations.map(location => location.name).join(' | ')}
                         </span>
                     }
                 </>
