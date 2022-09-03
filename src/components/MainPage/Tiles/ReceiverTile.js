@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import classes from './ReceiverTile.module.css';
 import MainButton from '../../Common/MainButton';
 import SecondaryButton from '../../Common/SecondaryButton';
@@ -24,6 +24,10 @@ const ReceiverTile = ({
         button = <SecondaryButton type={"button"} text={"Support now"} onClick={onButtonClick} />;
     }
 
+    let strippedDescription = description;
+    const descriptionDom = new DOMParser().parseFromString(description, 'text/html');
+    strippedDescription = descriptionDom.body.textContent;
+
     return (
         <div className={`${classes.tile} ${background ? classes.dark : ''} ${loading? classes.loading : ''}`} style={style}>
             <CustomLink to={href ?? '/'}>
@@ -35,7 +39,7 @@ const ReceiverTile = ({
                     </div>
                     <div className={classes['paragraph-container']}>
                         <p>
-                            {description}
+                            {strippedDescription}
                         </p>
                     </div>
                     {
