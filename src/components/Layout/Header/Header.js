@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import classes from './Header.module.css';
 import { NavLink } from 'react-router-dom';
 import hamburger from '../../../assets/hamburger.svg';
@@ -17,6 +17,21 @@ const Header = () => {
         navContainerRef.current.classList.remove(classes.open);
         window.scrollTo(0, 0);
     }
+
+
+    useEffect(() => {
+        const detectClickOutsideHeader = (event) => {
+            if (navContainerRef.current && !navContainerRef.current.contains(event.target)) {
+                navContainerRef.current.classList.remove(classes.open);
+            }
+        }
+        document.addEventListener("mousedown", detectClickOutsideHeader);
+
+        return () => {
+            // Unbind the event listener on clean up
+            document.removeEventListener("mousedown", detectClickOutsideHeader);
+        };
+    }, [navContainerRef]);
 
     return (
         <header className={classes.navbar}>

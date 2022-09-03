@@ -10,7 +10,7 @@ const FooterIcons = () => {
             <FooterImage href={"https://www.instagram.com/ukrainebackontrack/"}>
                 <img src={instaLogo} alt={"instagram"}/>
             </FooterImage>
-            <FooterImage href={"#ubotfb"}>
+            <FooterImage href={"https://www.facebook.com/Ukraine-back-on-track-109228915195265"}>
                 <img src={facebookLogo} alt={"facebook"}/>
             </FooterImage>
         </div>

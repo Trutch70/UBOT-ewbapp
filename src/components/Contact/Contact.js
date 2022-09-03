@@ -35,7 +35,7 @@ const Contact = () => {
                                 <img src={instaLogo} alt={"contact us on social media to help with helping ukrainian business"} />
                                 <span>ukrainebackontrack</span>
                             </a>
-                            <a className={classes['social-buttons-container']} target={'_blank'} rel={"noreferrer"} href={'#ubotfb'}>
+                            <a className={classes['social-buttons-container']} target={'_blank'} rel={"noreferrer"} href={'https://www.facebook.com/Ukraine-back-on-track-109228915195265'}>
                                 <img src={fbLogo} alt={"contact us on social media to help with helping ukrainian business"} />
                                     <span>ukrainebackontrack</span>
                             </a>
