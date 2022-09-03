@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import classes from './ReceiverTile.module.css';
 import MainButton from '../../Common/MainButton';
 import SecondaryButton from '../../Common/SecondaryButton';
