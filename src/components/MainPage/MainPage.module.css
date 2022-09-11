@@ -96,6 +96,7 @@
 .bottom-section {
     padding: 30px 0;
     scroll-margin-top: 60px;
+    min-height: 100vh;
 }
 
 @media (min-width: 760px) {
