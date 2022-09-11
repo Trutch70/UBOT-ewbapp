@@ -48,6 +48,14 @@
     line-height: 18px;
 }
 
+.receiver-body p > p {
+    margin: 0;
+}
+
+.receiver-body p > p + br:last-of-type {
+    display: none;
+}
+
 .receiver-bottom {
     margin-top: 10px;
     margin-right: -10px;

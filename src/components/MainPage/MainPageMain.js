@@ -4,8 +4,9 @@ import Tiles from './Tiles/Tiles';
 import useReceiversProvider from '../../hooks/UseReceiversProvider';
 import ContentContainer from '../Common/ContentContainer';
 import Steps from './Steps';
+import downArrow from '../../assets/down-arrow-svgrepo-com.svg';
 
-const MainPageMain = () => {
+const MainPageMain = ({infiniteScrollRef}) => {
     const [receivers, setReceivers] = useState([]);
     const [loading, setLoading] = useState(true);
     const receiversProvider = useReceiversProvider();
@@ -17,6 +18,11 @@ const MainPageMain = () => {
                 setLoading(false);
             })
     }, [receiversProvider]);
+
+    const onSeeMoreClick = () => {
+        infiniteScrollRef.current.scrollIntoView({behavior: 'smooth'});
+    }
+
     return (
         <section className={`${classes['main-section']}`}>
             <ContentContainer>
@@ -34,6 +40,12 @@ const MainPageMain = () => {
                     Despite the war, they still operate in Ukraine:
                 </div>
                 <Tiles receivers={receivers} loading={loading} loadingTilesAmount={4} />
+                <div className={`${classes['see-more']} text-blue`} onClick={onSeeMoreClick}>
+                    <div>See more</div>
+                    <div>
+                        <img src={downArrow} height={'1em'} width={'1em'} alt={'down arrow'}/>
+                    </div>
+                </div>
             </ContentContainer>
         </section>
     );
