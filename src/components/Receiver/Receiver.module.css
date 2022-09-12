@@ -56,6 +56,10 @@
     display: none;
 }
 
+.receiver-body ul li + br {
+    display: none;
+}
+
 .receiver-bottom {
     margin-top: 10px;
     margin-right: -10px;
