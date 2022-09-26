@@ -65,6 +65,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     -webkit-line-clamp: 5;
+    word-break: break-word;
 }
 
 .paragraph-container {

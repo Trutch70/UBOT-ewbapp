@@ -24,9 +24,8 @@ const ReceiverTile = ({
         button = <SecondaryButton type={"button"} text={"Support now"} onClick={onButtonClick} />;
     }
 
-    let strippedDescription = description;
     const descriptionDom = new DOMParser().parseFromString(description, 'text/html');
-    strippedDescription = descriptionDom.body.textContent;
+    const strippedDescription = descriptionDom.body.textContent;
 
     return (
         <div className={`${classes.tile} ${background ? classes.dark : ''} ${loading? classes.loading : ''}`} style={style}>
@@ -39,7 +38,7 @@ const ReceiverTile = ({
                     </div>
                     <div className={classes['paragraph-container']}>
                         <p>
-                            {strippedDescription}
+                            {strippedDescription !== 'undefined' ? strippedDescription : 'loading...'}
                         </p>
                     </div>
                     {

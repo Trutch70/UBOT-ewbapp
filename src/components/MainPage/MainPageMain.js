@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import classes from './MainPage.module.css';
 import Tiles from './Tiles/Tiles';
-import useReceiversProvider from '../../hooks/UseReceiversProvider';
 import ContentContainer from '../Common/ContentContainer';
 import Steps from './Steps';
 import downArrow from '../../assets/down-arrow-svgrepo-com.svg';
+import ReceiversProvider from '../../app/ReceiversProvider';
 
 const MainPageMain = ({infiniteScrollRef}) => {
     const [receivers, setReceivers] = useState([]);
     const [loading, setLoading] = useState(true);
-    const receiversProvider = useReceiversProvider();
 
     useEffect(() => {
-        receiversProvider.fetchReceivers()
+        ReceiversProvider.fetchReceivers()
             .then(data => {
                 setReceivers(data);
                 setLoading(false);
             })
-    }, [receiversProvider]);
+        ;
+    }, []);
 
     const onSeeMoreClick = () => {
         infiniteScrollRef.current.scrollIntoView({behavior: 'smooth'});

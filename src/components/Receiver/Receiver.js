@@ -1,24 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import useReceiversProvider  from '../../hooks/UseReceiversProvider';
 import ContentContainer from '../Common/ContentContainer';
 import classes from './Receiver.module.css';
 import defaultImage from '../../assets/default-image.png';
 import ReceiverDescription from './ReceiverDescription';
 import Slider from "react-slick";
 import AwesomeImage from '../MainPage/AwesomeImages/AwesomeImage';
+import ReceiversProvider from '../../app/ReceiversProvider';
 
 const Receiver = () => {
     const [receiver, setReceiver] = useState({});
     const [loaded, setLoaded] = useState(false);
     const [error, setError] = useState(null);
     const { receiverId } = useParams();
-    const receiversProvider = useReceiversProvider();
 
     useEffect(() => {
-        receiversProvider.fetchReceiver(receiverId)
+        ReceiversProvider.fetchReceiver(receiverId)
             .then(data => setReceiver(data))
-            .then(data => setLoaded(true))
+            .then(() => setLoaded(true))
             .catch(error => {
                 switch(error.message) {
                     case 'NOTFOUND':
@@ -29,7 +28,8 @@ const Receiver = () => {
                         break;
                 }
             })
-    }, [receiverId, receiversProvider])
+        ;
+    }, [receiverId])
 
     const sliderSettings = {
         dots: true,
