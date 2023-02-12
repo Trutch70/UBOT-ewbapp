@@ -394,7 +394,7 @@ const receivers = [
         "name": "pearshop",
         "description": "<p>Before the war, we worked as an advertising agency. We have been on the market already for 10 years.<br><br>Since the beginning of the full-scale invasion, we started volunteering and supported other volunteer projects in the way we do it best. We made stickers for cars, t-shirts, and other advertising products. After resuming work at the end of March, we decided to do a social project to make patriotic merch.<br><br>Now we work according to the scheme: we give <strong>10% to the author of the print</strong> and <strong>10% to help the Armed Forces</strong>. Currently, 20 illustrators from all over Ukraine cooperate with us. The site has about 400 prints and a wide variety of products.<br><br>The item in the last photo is the one with the mission - buy a t-shirt for yourself and the Ukrainian defender. So, when you order such a T-shirt for yourself, the second one (the same one) will go to a military hospital. The price is <strong>450 UAH</strong> (that's for two). If you want to buy only one for the defender, the price of one will be <strong>UAH 150</strong>.</p>\n",
         "bank_account": "",
-        "image_path": "https:\\/\\/assets.ukraine-back-on-track.com\\/IMG-1333-6313a2808450a.jpg",
+        "image_path": "https://assets.ukraine-back-on-track.com/IMG-1333-6313a2808450a.jpg",
         "locations": [
             {
                 "id": 1,
@@ -850,7 +850,7 @@ const receivers = [
         "name": "Heritage",
         "description": "Our story began in 2016 when we made the first leather cover for a foreign passport as a birthday gift for friends. Having expanded the assortment initially with basic leather accessories for everyday use, we made our first pair of military boots for those who appreciate their style and pay special attention to details. For 8 years, we have created collections of accessories, shoes and clothes that remain relevant to this day.\n\nIn 2018, we restarted our production in the city of Dnipro, focusing on creating custom-made shoes for the client, taking into account the orthopaedic features of the foot. Expanding the assortment from basic classic trainers and boots to summer shoes for every day. We put our many years of manual labour experience into each pair, from cutting patterns to assembling the workpiece.",
         "bank_account": "",
-        "image_path": "https:\\/\\/assets.ukraine-back-on-track.com\\/inst-3-700x560-63067f1e1718a.jpg",
+        "image_path": "https://assets.ukraine-back-on-track.com/inst-3-700x560-63067f1e1718a.jpg",
         "locations": [
             {
                 "id": 8,
@@ -1078,7 +1078,7 @@ const receivers = [
         "name": "KRAVCH",
         "description": "<p>KRAVCH is a Ukrainian fashion brand that creates unordinary clothes for ordinary days.<br>We believe that a person doesn’t need a special day to dress up; we can do this every day to celebrate life.<br><br>Many pieces are upcycled in order to give new life to old clothes, and the brand likes the idea of rethinking and redoing the clothes into something new.<br><br>The brand pays special attention to the details and cuts, creating interesting, unusual clothes.<br><br>All pieces are handmade by the brand’s designer Anna Kravchuk. The brand was founded in 2020 in Kyiv but is now temporarily located in a small town in the Khmelnytskyi region.</p>\n",
         "bank_account": "",
-        "image_path": "https:\\/\\/assets.ukraine-back-on-track.com\\/IMG-2708-63067a8768887.jpg",
+        "image_path": "https://assets.ukraine-back-on-track.com/IMG-2708-63067a8768887.jpg",
         "locations": [
             {
                 "id": 4,
@@ -1311,7 +1311,7 @@ const receivers = [
 const fetchReceivers = async (page = 1, limit = 8) => {
     const returnValues = [];
 
-    for (let i = ((page - 1) * 8); i <= ((page - 1) * 8 + 7); i++) {
+    for (let i = ((page - 1) * limit); i <= ((page - 1) * limit + (limit - 1)); i++) {
         if (i > (receivers.length - 1)) {
             return returnValues;
         }
