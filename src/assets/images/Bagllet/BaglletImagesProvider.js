@@ -14,4 +14,3 @@ const BaglletImagesProvider = {
 }
 
 export default BaglletImagesProvider;
- 
