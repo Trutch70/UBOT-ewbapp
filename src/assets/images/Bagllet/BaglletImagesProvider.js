@@ -13,4 +13,5 @@ const BaglletImagesProvider = {
     ]
 }
 
-export default BaglletImagesProvider; 
+export default BaglletImagesProvider;
+ 

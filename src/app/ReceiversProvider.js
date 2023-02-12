@@ -8,6 +8,7 @@ import StoneupImagesProvider from '../assets/images/Stoneup/StoneupImageProvider
 import LetimoImagesProvider from '../assets/images/Letimo/LetimoImagesProvider';
 import ThreePercentImageProvider from '../assets/images/ThreePercent/ThreePercentImageProvider';
 import AromaCultImagesProvider from '../assets/images/AromaCult/AromaCultImagesProvider';
+import BaglletImagesProvider from '../assets/images/Bagllet/BaglletImagesProvider';
 
 const receivers = [
     {
@@ -934,7 +935,7 @@ const receivers = [
         "name": "BAGLLET",
         "description": "<p>Bagllet is a Ukrainian essential bags and accessories brand with local manufacture in Kyiv. We founded Bagllet back in 2013 motivated by a desire to spread the aesthetic of minimalism through the creation of primaries for people who see beauty in everyday life.<br><br>The foundation of a laconic and neat product design is our traditions and experience. We are not just making but we are creating bags for you to have a part of a craftsmanship’s history.<br><br>The basis of our brand’s philosophy – simple and accurate lines combined with a timeless design and fine detailing. Each person is given their own, one-of-a-kind product, with its character and future story that is meant to be told.<br><br>Our product line consists of bags, backpacks, and accessories fully made of Italian handcrafted leather “Tuscany” with a special waterproof coating. We are not adding inner fabric lining, as we believe that the back of the skin is the best lining. The stiff structure of leather guarantees the bag will keep its shape for years. This approach lets us create beautiful and light-weighted bags while using materials consciously.<br><br>100% of the sales of the item you see in the last photo are transferred to the official account of the Armed Forces. All the reports about transferred money are posted weekly on our Instagram account. <br><br>We believe that even a small contribution from everyone can significantly help our army.</p>\n",
         "bank_account": "No data yet",
-        "image_path": "https://assets.ukraine-back-on-track.com/B117-14-1-62e5a005a1620.jpg",
+        "image_path": BaglletImagesProvider.main,
         "locations": [
             {
                 "id": 3,
@@ -955,13 +956,7 @@ const receivers = [
             }
         ],
         "donation_description": "Buy a bag from BAGLLET using their online shop or place an order in private messages on Instagram.",
-        "images": [
-            "https://assets.ukraine-back-on-track.com/B117-14-1-62e5a005a1620.jpg",
-            "https://assets.ukraine-back-on-track.com/b116-12-1-62e59d8f697be.jpg",
-            "https://assets.ukraine-back-on-track.com/B117-13-1-62e59ffadf32e.jpg",
-            "https://assets.ukraine-back-on-track.com/baglet-1-6306785f0342e.jpg",
-            "https://assets.ukraine-back-on-track.com/C003-dopomoga-3-63136eff3a748.jpg"
-        ],
+        "images": BaglletImagesProvider.images,
         "position": 30
     },
     {
