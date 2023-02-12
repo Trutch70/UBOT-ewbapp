@@ -1326,7 +1326,7 @@ const fetchReceivers = async (page = 1, limit = 8) => {
 
 const fetchReceiver = async (id) => {
     const filtered = receivers.filter((receiver) => {
-        return receiver.id == id;
+        return receiver.id === parseInt(id);
     })
 
     return new Promise((resolve) => {
