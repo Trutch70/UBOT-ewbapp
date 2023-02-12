@@ -1,10 +1,19 @@
+import PuffyHomeProvider from '../assets/images/PuffyHome/PuffyHomeProvider';
+import FrissonProvider from '../assets/images/Frisson/FrissonProvider';
+import POSProvider from '../assets/images/POS/POSProvider';
+import CemilosoapProvider from '../assets/images/Cemilosoap/CemilosoapProvider';
+import MebliProvider from '../assets/images/Mebli/MebliProvider';
+import SlowlyProvider from '../assets/images/Slowly/SlowlyProvider';
+import StoneupProvider from '../assets/images/Stoneup/StoneupProvider';
+import LetimoProvider from '../assets/images/Letimo/LetimoProvider';
+
 const receivers = [
     {
         "id": 16,
         "name": "PUFFY HOME",
         "description": "<p>My name is Natalka. I am a little girl's mother, and making blankets is my hobby. So, of course, the first one was made for my daughter. The plaid did not leave anyone indifferent.<br><br>The blanket is practical, and I tested it on myself. In addition to the fact that it is very soft, you will feel how it starts to warm you up after holding it in your hands.<br><br>The yarn from which our blankets are made is Oeko-Tex Standard 100. Blanket does not cause allergies or skin irritation and is, therefore, suitable for children from 0+ and adults with sensitive skin.<br><br>I work on demand. It takes 3-4 days to make a blanket depending on the size.</p>\n",
         "bank_account": "",
-        "image_path": "https://assets.ukraine-back-on-track.com/IMG-1241-63067c46e0ec2.jpg",
+        "image_path": PuffyHomeProvider.main,
         "locations": [
             {
                 "id": 7,
@@ -20,17 +29,7 @@ const receivers = [
             }
         ],
         "donation_description": "Buy a blanket from PUFFY HOME via private messages on Instagram.",
-        "images": [
-            "https://assets.ukraine-back-on-track.com/IMG-1241-63067c46e0ec2.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1242-63067d5987c1a.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1243-63067d617c38e.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1244-63067d6b2efc8.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1245-63067d7213ca6.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1246-63067d7a30a48.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1247-63067d842ecd2.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1248-63067d8ca296f.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1249-63067d916ec35.jpg"
-        ],
+        "images": PuffyHomeProvider.images,
         "position": 1
     },
     {
@@ -38,7 +37,7 @@ const receivers = [
         "name": "Frisson",
         "description": "<p>Frisson does limited sets of puzzles in collaboration with Ukrainian artists.<br><br>We founded Frisson with a simple goal – to help organize thoughts and have a great time at home. Collecting puzzles helps people reduce stress, stimulates brain activity, and increases the level of concentration. As a result, both hemispheres of the brain begin to work in balance.<br><br>Puzzles are an opportunity to slow down time and feel like a child <span style=\"color: rgba(0,0,0,0.87);background-color: rgb(255,255,255);font-size: 20px;font-family: Avenir, sans-serif;\">– </span>a carefree little one who doesn't need to rush anywhere. You can do it one on one with yourself, or you can do it with friends. 500 parts will be enough for everyone.</p>\n<p><br>20% of the sale of some items is transferred to the official account of the Armed Forces.</p>\n",
         "bank_account": "",
-        "image_path": "https://assets.ukraine-back-on-track.com/frisson-riddle-hands-631396c288ae0.webp",
+        "image_path": FrissonProvider.main,
         "locations": [
             {
                 "id": 3,
@@ -59,14 +58,7 @@ const receivers = [
             }
         ],
         "donation_description": "Buy puzzles from Frisson using their online shop or place an order in private messages on Instagram.",
-        "images": [
-            "https://assets.ukraine-back-on-track.com/frisson-riddle-hands-631396c288ae0.webp",
-            "https://assets.ukraine-back-on-track.com/IMG-1331-631396f388d2e.jpg",
-            "https://assets.ukraine-back-on-track.com/frisson-jungle-full-631396fcdce19.webp",
-            "https://assets.ukraine-back-on-track.com/IMG-1330-63139704dd628.jpg",
-            "https://assets.ukraine-back-on-track.com/frisson-spring-full-6313970d8f3f9.webp",
-            "https://assets.ukraine-back-on-track.com/IMG-1332-63139714964f9.jpg"
-        ],
+        "images": FrissonProvider.images,
         "position": 2
     },
     {
@@ -74,7 +66,7 @@ const receivers = [
         "name": "PIECEOFSHIRT",
         "description": "<p>PIECEOFSHIRT began as a vintage merch store, which grew into a brand with its own designs, the main specialty of which is bootlegs. Among PIECEOFSHIRT's most recognizable pieces are the charity drop T-shirts with “Stolen Island” and “Ukraine” prints, playing off the logos of Stone Island and musician Aphex Twin. The team sold 350 T-shirts and transferred 130 thousand hryvnias to volunteers.</p>\n<p>The brand's founder, <strong>Reshat Brat</strong>, has long been fond of skate culture: he skateboarded and collected merch from various music groups. In 2017, a year after moving to Kyiv, Reshat opened an Instagram store of vintage merch PIECEOFSHIRT, and this marked the beginning of the brand's story.</p>\n<blockquote><em>\"It was a way of communicating with the city; at that time, I didn't know anyone in Kyiv. I met a person, who gave away a T-shirt, </em><strong><em>but it was more important to me who I was selling it to than the fact of the sale itself</em></strong><em>.\"</em></blockquote>\n<p>Reshat always wanted to create his own clothing design: during the operation of the vintage store, he began to understand prints and materials, and in 2020, PIECEOFSHIRT presented the first collection.</p>\n<h3>About the team and production</h3>\n<p>There are two people on the team — Reshat, and Dima. Reshat deals with designs, organization of production, and content, and Dima deals with communication, sales, and shipments. Friends help them at almost all stages (correction of designs, production, sales, photo-video content).</p>\n<blockquote><em>\"If we talk about the beginning of PIECEOFSHIRT's existence, then </em><strong><em>the team first appeared, and then the brand</em></strong><em>. My brothers Ivan and Danylo helped start production and promote designs based on my eponymous Instagram store with vintage merch in 2020,”.</em></blockquote>\n<p>The idea behind the PIECEOFSHIRT brand is to develop limited edition drops printed on vintage t-shirts. However, production was never constant.</p>\n<blockquote><em>\"We just dropped new things when there was time and inspiration. All previous and current drops were printed in Kyiv with the participation of our friend Anton (Walls Press). From February 24 to April 1, he and his family were in Plakhtianka, Makariv district, under the occupation of the Russian invaders, almost without communication. Everyone here was worried and waiting for him. Fortunately, he overcame his terrible test of fate and returned to Kyiv.\"</em></blockquote>\n<p>The first items of the brand were long sleeves with bootleg design \"ЦОЙ DIVISION\" (TSOI DIVISION, which refers to Victor Tsoi) and the series dedicated to the pandemic \"STAY AWAY\" + \"2020\". Longsleeves \"Х*Й ВОЙНЕ\" (FUCK THE WAR) were released next: 21 units of a single edition were sold in less than a day.</p>\n<blockquote><em>\"Playing logos, making bootlegs (in PIECEOFSHIRT's case, ironic parodies) is our forte. This is a fairly common technique, with the help of which the design first attracts attention as something quite familiar, and only then conveys the author's opinion,\"</em></blockquote>\n<p>For us, as well as for many, the words <strong>Made in Ukraine</strong> are extremely powerful. And we want our business to consist entirely of these powerful words.</p>\n",
         "bank_account": "No data yet",
-        "image_path": "https://assets.ukraine-back-on-track.com/ukraine-62e5aa21d18e4.jpg",
+        "image_path": POSProvider.main,
         "locations": [
             {
                 "id": 3,
@@ -95,11 +87,7 @@ const receivers = [
             }
         ],
         "donation_description": "Buy a shirt from PIECEOFSHIRT via private messages on Instagram.",
-        "images": [
-            "https://assets.ukraine-back-on-track.com/ukraine-62e5aa21d18e4.jpg",
-            "https://assets.ukraine-back-on-track.com/stolen-iland-bb-62e5aa5a5968f.jpg",
-            "https://assets.ukraine-back-on-track.com/Stolen-Iland-62e5aa624ba16.jpg"
-        ],
+        "images": POSProvider.images,
         "position": 3
     },
     {
@@ -107,7 +95,7 @@ const receivers = [
         "name": "Cemilosoap",
         "description": "<p>Cemilosoap [this is soap] is an ethical brand of craft oat milk soaps and handmade cosmetics.</p>\n<p>Soaps are made entirely by hand from certified, environmentally friendly ingredients without ready-made parabens, sulfates, synthetic fragrances, and dyes.&nbsp;</p>\n<p>Almost all cosmetics are packed in paper and glass containers that can be recycled. Our range of soaps is small, but everyone can find soap for their skin type:</p>\n<h3>ORANGE-CINNAMON</h3>\n<p>The bright orange color is given by unrefined sea buckthorn oil. The sweet orange, ginger, and cinnamon aroma will cheer you up and give you a good mood. Suitable for both oily and combination skin.</p>\n<h3>CHOCOLATE</h3>\n<p>It contains aromatic grated cocoa supplemented with essential oils of cinnamon and cubeb lithium, which stimulate metabolism and improve blood circulation. Suitable for normal, dry skin.</p>\n<h3>MENTHOL</h3>\n<p>Soap with the addition of menthol crystals is recommended for problematic, oily skin and is a good antiseptic. Salt is a nice bonus! Which has a light peeling effect.</p>\n<h3>SPICY</h3>\n<p>Contains saponified oat milk, coconut oil, palm oil, virgin olive oil, wine, and almond, enriched with natural clays - white, red, and green and spicy essential oils of clove, patchouli, sandalwood, and nutmeg. Suitable for dry, normal skin.&nbsp;</p>\n<h3>FOREST</h3>\n<p>It contains incredible aromas of ylang-ylang, lemon, and tea tree. The shade of grassy green is given by spirulina, which normalizes the work of the sebaceous glands and provides the skin with natural elasticity and smoothness; Suitable for normal, oily, aged skin.</p>\n<p><strong>And many more! </strong></p>\n",
         "bank_account": "",
-        "image_path": "https://assets.ukraine-back-on-track.com/IMG-6012-63220edac1fed.jpg",
+        "image_path": CemilosoapProvider.main,
         "locations": [
             {
                 "id": 9,
@@ -128,13 +116,7 @@ const receivers = [
             }
         ],
         "donation_description": "Buy a soap from Cemilosoap via private messages on Instagram or WhatsApp.",
-        "images": [
-            "https://assets.ukraine-back-on-track.com/IMG-6012-63220edac1fed.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-6016-63220ee2e1bd5.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-6816-63220eebd28f3.jpg",
-            "https://assets.ukraine-back-on-track.com/image-6483441-63220ed019e90-634b209e12c12.jpg",
-            "https://assets.ukraine-back-on-track.com/131398518-135748328167710-577011259249404573-n-63220de5e838b-634b20a2a1de0.jpg"
-        ],
+        "images": CemilosoapProvider.images,
         "position": 4
     },
     {
@@ -142,7 +124,7 @@ const receivers = [
         "name": "Mebli dlya Vas",
         "description": "<p>Feel the quality of the Ukrainian manufacturer!</p>\n<p>\"Mebli dlya Vas\" [furniture for you] is a Ukrainian manufacturer of high-quality upholstered furniture. We offer a wide range of furniture for homes and businesses. Furthermore, we carry out orders according to individual parameters to satisfy your needs!</p>\n<p>The company has been manufacturing furniture since 1994. The production area is located at the address: Ternopil district, Velyky Hlybochok village, Gagarina street, 2</p>\n<p>Upholstered furniture is the key to the comfort and coziness of your home! Our extensive work experience allows you to choose furniture that perfectly suits your home.</p>\n",
         "bank_account": "",
-        "image_path": "https://assets.ukraine-back-on-track.com/IMG-3223-637a1e231d1b0.jpg",
+        "image_path": MebliProvider.main,
         "locations": [
             {
                 "id": 1,
@@ -163,15 +145,7 @@ const receivers = [
             }
         ],
         "donation_description": "Buy furniture from Mebli dlya Vas via private messages on Instagram or contact them via the website. ",
-        "images": [
-            "https://assets.ukraine-back-on-track.com/IMG-3223-637a1e231d1b0.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-3224-637a1e2cbd0bb.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-3222-637a1e3145a76.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-3221-637a1e3b2bb40.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-3220-637a1e4143517.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-3217-637a1e4688fef.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-3216-637a1e4ad8c30.jpg"
-        ],
+        "images": MebliProvider.images,
         "position": 5
     },
     {
@@ -179,7 +153,7 @@ const receivers = [
         "name": "Slow.Ly",
         "description": "<p>Slow.Ly is a clothing and accessories brand that cares about comfort and nature. Our main activity is <strong>upcycling</strong>. We create bags from super non-standard and, at the same time, technological materials – remnants of fabrics from the production of paragliders and small ships, parachutes, kite domes, sails, etc.<br><br>After February 24, we decided to join the equipping of our defenders in precisely the same way we were doing before - we started making small bags that would contain everything necessary. And immediately, the idea of sewing first-aid kits appeared - we quickly sewed several samples, developed patterns, and agreed with various contractors for sewing. In 2-3 months, we sewed and handed over 2,000 first-aid kits to volunteers.<br><br>At the moment, we have fully resumed work; we are trying to continue contributing financially to various fundraisers. Namely, we periodically create volunteer collections, and after the sale, we transfer 100% of the funds to our volunteers and the military.</p>\n",
         "bank_account": "",
-        "image_path": "https://assets.ukraine-back-on-track.com/IMG-1355-6313ad0197607.jpg",
+        "image_path": SlowlyProvider.main,
         "locations": [
             {
                 "id": 3,
@@ -200,26 +174,7 @@ const receivers = [
             }
         ],
         "donation_description": "Buy a bag from Slow.Ly using their online shop or place an order in private messages on Instagram.",
-        "images": [
-            "https://assets.ukraine-back-on-track.com/IMG-1355-6313ad0197607.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1346-6313ad14d9412.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1348-6313ad2e260ce.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1349-6313ad3819a67.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1350-6313ad3feff9b.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1340-6313ad48ae254.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1352-6313ad55a4fee.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1353-6313ad601ca72.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1354-6313ad67e3817.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1357-6313ad8476dd4.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1358-6313ad8d92c0e.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1360-6313ad9be9e97.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1361-6313ada32f00e.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1362-6313adaa2e896.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1363-6313adb2555ea.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1351-6313adb908f84.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1347-6313da39def7d.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1356-6313da4114269.jpg"
-        ],
+        "images": SlowlyProvider.images,
         "position": 6
     },
     {
@@ -227,7 +182,7 @@ const receivers = [
         "name": "stoneup.shop",
         "description": "<p>My name is Nina, and I'm an interior &amp; product designer. I started my small business in February 2021. In my shop, you can find <strong>marble decor</strong> – designed and handcrafted by myself. <br><br>Each product in this shop is 100% handmade and created with love. Since marble is a stone with its own character, each product is full of individuality. This makes them very unique, and you will never find 2 identical products.</p>\n<p>By supporting my small business, you're supporting the Ukrainian economy and Ukrainians as well. <strong>I'll transfer 15% from each order to volunteer organizations</strong>.<br><br>Location before and during the war - Mukachevo, Zakarpattia.</p>\n<p>As long as it's safe in my home city, I choose to stay here and be as helpful as possible.</p>\n",
         "bank_account": "",
-        "image_path": "https://assets.ukraine-back-on-track.com/IMG-2347-11zon-632214b2b5d57.jpg",
+        "image_path": StoneupProvider.main,
         "locations": [],
         "international_shipping": true,
         "links": [
@@ -238,13 +193,7 @@ const receivers = [
             }
         ],
         "donation_description": "Buy handmade marble decor elements from stoneup.shop via private messages on Instagram",
-        "images": [
-            "https://assets.ukraine-back-on-track.com/IMG-2347-11zon-632214b2b5d57.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-2170-11zon-632214c3a88dd.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-3334-11zon-632214cf492db.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-2236-11zon-632214e1c1315.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-2066-11zon-63221521d4ce8.jpg"
-        ],
+        "images": StoneupProvider.images,
         "position": 7
     },
     {
@@ -252,7 +201,7 @@ const receivers = [
         "name": "Letimo",
         "description": "<p>LETIMO is a Ukrainian brand of locally made and handcrafted high-quality linen garments designed to be simple, chic, and forever comfortable.<br><br>We are aware of our social and environmental responsibility, so we reaffirm day by day our commitment to sustainable development. <br><br>We use a sustainable material - 100% linen. All pieces are adorned with natural shell buttons.<br><br>Most of our clothes are made to order or crafted in small batches, so it’s responsibly made without excess waste.</p>\n<h3><br>How the war affects business</h3>\n<p>After a few weeks of the war, we decided to start working. We temporarily moved to another city and restarted production. Production moved from Kyiv to Khmelnytskyi, where the warehouse is currently located. In Kyiv, we continue to sew.<br><br>But on the plus side, we started cooperating with various factories in Western Ukraine. Nevertheless, we live in a new reality, as every Ukrainian does.</p>\n",
         "bank_account": "No data yet",
-        "image_path": "https://assets.ukraine-back-on-track.com/IMG-5544-min-62eff25f51bd0.jpg",
+        "image_path": LetimoProvider.main,
         "locations": [
             {
                 "id": 3,
@@ -277,17 +226,7 @@ const receivers = [
             }
         ],
         "donation_description": "Buy clothes from LETIMO using their online shop or place an order in private messages on Instagram.",
-        "images": [
-            "https://assets.ukraine-back-on-track.com/IMG-5544-min-62eff25f51bd0.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-2890-min-62eff31526777.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-3001-min-62eff31ca27ad.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-5668-min-62eff32647ea6.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-5692-min-62eff32f48804.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-0767-min-62eff3388cd2d.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-0766-min-62eff34191441.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-0768-min-62eff34ba79a0.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-0769-min-62eff3537fbf3.jpg"
-        ],
+        "images": LetimoProvider.images,
         "position": 8
     },
     {
