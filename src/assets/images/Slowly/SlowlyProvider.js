@@ -17,7 +17,7 @@ import Img16 from './IMG-1361-6313ada32f00e.jpg';
 import Img17 from './IMG-1362-6313adaa2e896.jpg';
 import Img18 from './IMG-1363-6313adb2555ea.jpg';
 
-export default {
+const SlowlyProvider = {
     main: Img1,
     images: [
         Img1,
@@ -40,3 +40,5 @@ export default {
         Img18,
     ]
 }
+
+export default SlowlyProvider;
