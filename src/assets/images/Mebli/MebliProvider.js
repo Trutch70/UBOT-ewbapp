@@ -6,7 +6,7 @@ import Img5 from './IMG-3222-637a1e3145a76.jpg';
 import Img6 from './IMG-3224-637a1e2cbd0bb.jpg';
 import Img7 from './IMG-3217-637a1e4688fef.jpg';
 
-export default {
+const MebliProvider = {
     main: Img1,
     images: [
         Img1,
@@ -18,3 +18,5 @@ export default {
         Img7,
     ]
 }
+
+export default MebliProvider;

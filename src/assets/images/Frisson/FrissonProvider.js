@@ -5,7 +5,7 @@ import Img4 from './IMG-1330-63139704dd628.jpg';
 import Img5 from './IMG-1332-63139714964f9.jpg';
 import Img6 from './IMG-1330-63139704dd628.jpg';
 
-export default {
+const FrissonProvider = {
     main: Img1,
     images: [
         Img1,
@@ -16,3 +16,5 @@ export default {
         Img6,
     ],
 }
+
+export default FrissonProvider;

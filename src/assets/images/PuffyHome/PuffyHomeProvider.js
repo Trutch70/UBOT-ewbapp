@@ -8,7 +8,7 @@ import Img7 from './IMG-1247-63067d842ecd2.jpg';
 import Img8 from './IMG-1248-63067d8ca296f.jpg';
 import Img9 from './IMG-1249-63067d916ec35.jpg';
 
-export default {
+const PuffyHomeProvider = {
     main: Img1,
     images: [
         Img1,
@@ -22,3 +22,5 @@ export default {
         Img9,
     ],
 };
+
+export default PuffyHomeProvider;

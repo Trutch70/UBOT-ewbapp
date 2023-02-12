@@ -8,7 +8,7 @@ import Img7 from './IMG-3001-min-62eff31ca27ad.jpg';
 import Img8 from './IMG-5668-min-62eff32647ea6.jpg';
 import Img9 from './IMG-5692-min-62eff32f48804.jpg';
 
-export default {
+const LetimoProvider = {
     main: Img1,
     images: [
         Img1,
@@ -22,3 +22,5 @@ export default {
         Img9,
     ]
 }
+
+export default LetimoProvider;
