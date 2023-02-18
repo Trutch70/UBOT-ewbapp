@@ -4,7 +4,7 @@ import POSImagesProvider from '../assets/images/POS/POSImagesProvider';
 import CemilosoapImagesProvider from '../assets/images/Cemilosoap/CemilosoapImagesProvider';
 import MebliImagesProvider from '../assets/images/Mebli/MebliImagesProvider';
 import SlowlyImagesProvider from '../assets/images/Slowly/SlowlyImagesProvider';
-import StoneupImagesProvider from '../assets/images/Stoneup/StoneupImageProvider';
+import StoneupImagesProvider from '../assets/images/Stoneup/StoneupImagesProvider';
 import LetimoImagesProvider from '../assets/images/Letimo/LetimoImagesProvider';
 import ThreePercentImageProvider from '../assets/images/ThreePercent/ThreePercentImageProvider';
 import AromaCultImagesProvider from '../assets/images/AromaCult/AromaCultImagesProvider';
