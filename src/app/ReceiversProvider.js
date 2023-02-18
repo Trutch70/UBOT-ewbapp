@@ -1,11 +1,14 @@
-import PuffyHomeImagesProvider from '../assets/images/PuffyHome/PuffyHomeProvider';
-import FrissonImagesProvider from '../assets/images/Frisson/FrissonProvider';
-import POSImagesProvider from '../assets/images/POS/POSProvider';
-import CemilosoapImagesProvider from '../assets/images/Cemilosoap/CemilosoapProvider';
-import MebliImagesProvider from '../assets/images/Mebli/MebliProvider';
-import SlowlyImagesProvider from '../assets/images/Slowly/SlowlyProvider';
-import StoneupImagesProvider from '../assets/images/Stoneup/StoneupProvider';
-import LetimoImagesProvider from '../assets/images/Letimo/LetimoProvider';
+import PuffyHomeImagesProvider from '../assets/images/PuffyHome/PuffyHomeImagesProvider';
+import FrissonImagesProvider from '../assets/images/Frisson/FrissonImagesProvider';
+import POSImagesProvider from '../assets/images/POS/POSImagesProvider';
+import CemilosoapImagesProvider from '../assets/images/Cemilosoap/CemilosoapImagesProvider';
+import MebliImagesProvider from '../assets/images/Mebli/MebliImagesProvider';
+import SlowlyImagesProvider from '../assets/images/Slowly/SlowlyImagesProvider';
+import StoneupImagesProvider from '../assets/images/Stoneup/StoneupImagesProvider';
+import LetimoImagesProvider from '../assets/images/Letimo/LetimoImagesProvider';
+import ThreePercentImageProvider from '../assets/images/ThreePercent/ThreePercentImageProvider';
+import AromaCultImagesProvider from '../assets/images/AromaCult/AromaCultImagesProvider';
+import BaglletImagesProvider from '../assets/images/Bagllet/BaglletImagesProvider';
 
 const receivers = [
     {
@@ -621,7 +624,7 @@ const receivers = [
         "name": "Aroma.Cult",
         "description": "<p>Aroma.Cult is an olfactory shop where attention to detail comes first. Our products are made with Ukrainian and world culture resources in the heart of Ukraine - Kyiv.<br><br>Candles are made from the best wax produced in America, wooden wicks, and concrete bowls. Aromas are developed for each candle separately and are unique.<br><br>Also, every season we release a candle dedicated to the season. But unfortunately, because of the war, the summer candle was not released. It is because the logistical situation during the war is unstable, and we didn’t have inspiration, which is very important for us. <br><br>We are preparing for the release of a new autumn candle that will embody the indomitable thirst for the victory of the Ukrainian people!</p>\n",
         "bank_account": "No data yet",
-        "image_path": "https://assets.ukraine-back-on-track.com/IMG-9625-1-1-626098d5102e0.png",
+        "image_path": AromaCultImagesProvider.main,
         "locations": [
             {
                 "id": 3,
@@ -637,13 +640,7 @@ const receivers = [
             }
         ],
         "donation_description": "Buy a candle from Aroma Cult via private messages on Instagram.",
-        "images": [
-            "https://assets.ukraine-back-on-track.com/265312642-1253352358479941-3148101250146845679-n-1-62e541df4b850.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-0436-62e542136fde4.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-0438-62e542240c565.jpg",
-            "https://assets.ukraine-back-on-track.com/235025028-867076260865540-15026407342981786-n-62e542482be77.jpg",
-            "https://assets.ukraine-back-on-track.com/247661746-579947119985364-3618707892758442792-n-62e5425925cf4.jpg"
-        ],
+        "images": AromaCultImagesProvider.images,
         "position": 21
     },
     {
@@ -869,7 +866,7 @@ const receivers = [
         "name": "3%",
         "description": "<h3>Three percent make a difference, join the three percent!</h3>\n<p>3% was founded in 2021 to make your life more comfortable, more refined, and more conscious.</p>\n<p>Our whole essence is embedded in two concepts: functionality and minimalism. The ergonomic cut, technological materials, and attention to detail form functionality.</p>\n<p>Laconic silhouettes, the interconnectedness of colors, relevance beyond trends and time – the basics of minimalism. Everything we create is designed to give you a superpower, whether it's weather protection or relevance at any time of day, in any context.</p>\n<h3>Our mission</h3>\n<p>To create a community of thinking, conscious modern people who share our values and take daily steps towards the development of culture, technology, and civilization as a whole and in their own way to simplify this path for them</p>\n<h3>Eco-consciousness and anti-consumerism</h3>\n<p>We believe that 3% is enough for fundamental changes, so we try to minimize the negative impact on the Planet by all means:</p>\n<ul>\n<li>3% of your purchases will go to improving the ecological situation every year (planting forests, cleaning up littered areas, helping eco-activists).</li>\n<li>reusable functional packaging to reduce pollution of the planet.</li>\n<li>optimization of cutting with small elements (masks, caps) to reduce the amount of waste.</li>\n<li>timeless silhouettes and high-quality materials to extend the service life of each wardrobe item.</li>\n<li>3% of the total amount of sewn clothes is enough to clothe the whole world</li>\n<li>planned tailoring and pre-ordering, focused on optimal use of raw materials and minimization of residues.</li>\n<li>Our clothes are created and manufactured in cooperation with Ukrainian factories, which allows us to support local businesses and ensure high product quality.</li>\n<li>keychain tag - an additional function instead of a single use before a trip to the trash.</li>\n</ul>\n<p>We want things to stay with you for a long time, regardless of the season or trends, so we don't tie our drops to fast-fashion calendars.</p>\n<p>Instead, with each new drop, we write the next Chapter of history, which reveals new facets of our vision and brings our community 3% closer to the mission each time.</p>\n<p>Three percent make a difference. Join the three percent!</p>\n",
         "bank_account": "",
-        "image_path": "https://assets.ukraine-back-on-track.com/09-3-HR-6313c590674b1.webp",
+        "image_path": ThreePercentImageProvider.main,
         "locations": [
             {
                 "id": 3,
@@ -894,12 +891,7 @@ const receivers = [
             }
         ],
         "donation_description": "Buy clothes from 3% using their online shop or place an order in private messages on Instagram.",
-        "images": [
-            "https://assets.ukraine-back-on-track.com/09-3-HR-6313c590674b1.webp",
-            "https://assets.ukraine-back-on-track.com/12-3-HR-6313c5f91c18b.jpg",
-            "https://assets.ukraine-back-on-track.com/Rectangle-545-6313c60478d04.jpg",
-            "https://assets.ukraine-back-on-track.com/IMG-1498-6313c60fa5963.jpg"
-        ],
+        "images": ThreePercentImageProvider.images,
         "position": 28
     },
     {
@@ -943,7 +935,7 @@ const receivers = [
         "name": "BAGLLET",
         "description": "<p>Bagllet is a Ukrainian essential bags and accessories brand with local manufacture in Kyiv. We founded Bagllet back in 2013 motivated by a desire to spread the aesthetic of minimalism through the creation of primaries for people who see beauty in everyday life.<br><br>The foundation of a laconic and neat product design is our traditions and experience. We are not just making but we are creating bags for you to have a part of a craftsmanship’s history.<br><br>The basis of our brand’s philosophy – simple and accurate lines combined with a timeless design and fine detailing. Each person is given their own, one-of-a-kind product, with its character and future story that is meant to be told.<br><br>Our product line consists of bags, backpacks, and accessories fully made of Italian handcrafted leather “Tuscany” with a special waterproof coating. We are not adding inner fabric lining, as we believe that the back of the skin is the best lining. The stiff structure of leather guarantees the bag will keep its shape for years. This approach lets us create beautiful and light-weighted bags while using materials consciously.<br><br>100% of the sales of the item you see in the last photo are transferred to the official account of the Armed Forces. All the reports about transferred money are posted weekly on our Instagram account. <br><br>We believe that even a small contribution from everyone can significantly help our army.</p>\n",
         "bank_account": "No data yet",
-        "image_path": "https://assets.ukraine-back-on-track.com/B117-14-1-62e5a005a1620.jpg",
+        "image_path": BaglletImagesProvider.main,
         "locations": [
             {
                 "id": 3,
@@ -964,13 +956,7 @@ const receivers = [
             }
         ],
         "donation_description": "Buy a bag from BAGLLET using their online shop or place an order in private messages on Instagram.",
-        "images": [
-            "https://assets.ukraine-back-on-track.com/B117-14-1-62e5a005a1620.jpg",
-            "https://assets.ukraine-back-on-track.com/b116-12-1-62e59d8f697be.jpg",
-            "https://assets.ukraine-back-on-track.com/B117-13-1-62e59ffadf32e.jpg",
-            "https://assets.ukraine-back-on-track.com/baglet-1-6306785f0342e.jpg",
-            "https://assets.ukraine-back-on-track.com/C003-dopomoga-3-63136eff3a748.jpg"
-        ],
+        "images": BaglletImagesProvider.images,
         "position": 30
     },
     {
