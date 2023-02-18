@@ -11,6 +11,7 @@ const BeCleanImagesProvider = {
         img2,
         img3,
         img4,
+        img5,
     ]
 }
 
